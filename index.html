@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Akshara Saraswati Widya Loka</title>
+<title>Graha Sastra Kertha Langhu</title>
 <style>
 :root{--p:#4b2b78;--d:#2f194f;--l:#f3edf9;--ink:#292333;--muted:#756d80}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#fcfaff;color:var(--ink);font:15px Arial,sans-serif;line-height:1.6}
@@ -11,7 +11,7 @@ nav{display:flex;gap:18px;flex-wrap:wrap}nav a{font-size:13px;text-decoration:no
 .hero{padding:58px 0;background:radial-gradient(circle at 85% 20%,#e6d8f2,transparent 32%),linear-gradient(120deg,#f2eafa,#fff)}.heroGrid{display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center}
 .pill,.demo{display:inline-block;background:#eadff5;color:#704a96;border-radius:30px;padding:6px 11px;font-size:11px;font-weight:bold;letter-spacing:.05em}
 h1{font-size:clamp(38px,5vw,58px);line-height:1.08;color:var(--d);margin:17px 0;letter-spacing:-2px}.hero p{color:var(--muted);max-width:520px}
-.btn{display:inline-block;padding:12px 17px;border-radius:11px;background:var(--p);color:white;text-decoration:none;font-weight:bold;font-size:13px;margin:8px 8px 0 0}.btn.alt{background:white;color:var(--d);border:1px solid #ddd1e9}
+.btn{display:inline-block;padding:12px 17px;border-radius:11px;background:var(--p);color:white;text-decoration:none;font-weight:bold;font-size:13px;margin:8px 8px 0 0}.btn.alt{background:white;color:var(--d);border:1px solid #ddd1e9}.btn:disabled{opacity:.45;cursor:not-allowed}
 .heroImg{height:320px;width:100%;object-fit:cover;border-radius:25px;box-shadow:0 15px 40px #4b2b7822}
 .stats{display:flex;gap:10px;margin-top:25px}.stat{background:#ffffffc9;border:1px solid #e7deef;border-radius:13px;padding:12px;flex:1}.stat b{display:block;color:var(--d);font-size:20px}.stat small{color:var(--muted)}
 section{padding:58px 0}.head{margin-bottom:22px}.head small{color:#8c68ad;font-weight:bold;letter-spacing:.12em}.head h2{font-size:30px;color:var(--d);margin:5px 0}.head p{color:var(--muted);margin:0;font-size:13px}
@@ -22,23 +22,116 @@ section{padding:58px 0}.head{margin-bottom:22px}.head small{color:#8c68ad;font-w
 .activities{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.activity{background:white;border:1px solid #e9e1f0;border-radius:16px;overflow:hidden}.activity img{width:100%;height:170px;object-fit:cover}.activity div{padding:15px}.activity b{color:var(--d)}.activity p{font-size:12px;color:var(--muted);margin:5px 0}
 .schedule{display:grid;grid-template-columns:1fr 1fr;gap:16px}.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #eee8f3;font-size:13px}.row:last-child{border:0}.row span:last-child{font-weight:bold;color:#75529a}
 footer{background:#241536;color:white;padding:34px 0}footer p{font-size:12px;color:#c7b9d4}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px}
-@media(max-width:760px){.heroGrid,.grid2,.schedule{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.books{grid-template-columns:repeat(2,1fr)}.activities{grid-template-columns:1fr}.heroImg{height:240px}nav{gap:9px}nav a{font-size:11px}.stats{gap:6px}.stat{padding:9px}.stat b{font-size:16px}.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}}
-</style></head><body>
-<div class="top"><div class="wrap">Perpustakaan SMA Negeri 1 Banjarangkan · Pratinjau website</div></div>
-<header><div class="wrap nav"><div class="brand"><div class="logo">AS</div><div>AKSHARA SARASWATI<br>WIDYA LOKA</div></div><nav><a href="#beranda">Beranda</a><a href="#profil">Profil</a><a href="#layanan">Layanan</a><a href="#katalog">Katalog</a><a href="#kegiatan">Kegiatan</a><a href="#info">Informasi</a></nav></div></header>
+@media(max-width:760px){.nav{align-items:flex-start;flex-direction:column;padding:10px 0}nav{width:100%;overflow-x:auto;flex-wrap:nowrap;padding:6px 0}nav a{white-space:nowrap}.tools{flex-wrap:wrap}.tools input{width:100%}.heroGrid,.grid2,.schedule{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.books{grid-template-columns:repeat(2,1fr)}.activities{grid-template-columns:1fr}.heroImg{height:240px}nav{gap:9px}nav a{font-size:11px}.stats{gap:6px}.stat{padding:9px}.stat b{font-size:16px}.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}}
+.logo-img{width:58px;height:58px;object-fit:contain;display:block;background:transparent;border-radius:0}\n</style></head><body>
+<div class="top"><div class="wrap">Perpustakaan SMA Negeri 1 Banjarangkan</div></div>
+<header><div class="wrap nav"><div class="brand"><img class="logo-img" src="logo.png" alt="Logo SMA Negeri 1 Banjarangkan"><div>GRAHA SASTRA<br>KERTHA LANGHU</div></div><nav><a href="#beranda">Beranda</a><a href="#profil">Profil</a><a href="#layanan">Layanan</a><a href="#katalog">Katalog</a><a href="#kegiatan">Kegiatan</a><a href="#info">Informasi</a></nav></div></header>
 <main>
-<section class="hero" id="beranda"><div class="wrap heroGrid"><div><span class="pill">RUANG TUMBUH PENGETAHUAN</span><h1>Temukan ilmu,<br><span style="color:#9876b8">luaskan dunia.</span></h1><p>Selamat datang di website Perpustakaan Akshara Saraswati Widya Loka. Jelajahi koleksi bacaan, kenali layanan, dan temukan kegiatan literasi sekolah.</p><a class="btn" href="#katalog">Jelajahi katalog ↗</a><a class="btn alt" href="#profil">Profil perpustakaan</a><div class="stats"><div class="stat"><b>5.000+</b><small>Koleksi (contoh)</small></div><div class="stat"><b>08–14</b><small>Jam layanan contoh</small></div><div class="stat"><b>Literasi</b><small>Ruang berkembang</small></div></div></div><img class="heroImg" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1100&q=85" alt="Ilustrasi perpustakaan"></div></section>
-<section id="profil"><div class="wrap"><div class="head"><small>TENTANG KAMI</small><h2>Lebih dekat dengan perpustakaan</h2><p>Konten ini contoh dan perlu diganti dengan data resmi dari guru/petugas.</p></div><div class="grid2"><div class="card"><h3>Profil singkat</h3><p>Akshara Saraswati Widya Loka merupakan ruang belajar yang menyediakan sumber informasi dan bahan bacaan untuk mendukung budaya literasi warga sekolah.</p></div><div class="card vision"><h3>Visi perpustakaan</h3><p>Menjadi pusat sumber belajar yang nyaman, informatif, dan mendorong tumbuhnya budaya literasi.</p><p style="margin-top:10px;font-size:10px">Visi di atas hanya contoh, bukan visi resmi.</p></div></div></div></section>
-<section id="layanan" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>FASILITAS</small><h2>Layanan perpustakaan</h2><p>Contoh layanan yang bisa disesuaikan dengan kondisi sekolah.</p></div><div class="services"><div class="service">📚<b>Baca di tempat</b><p>Ruang membaca dan belajar.</p></div><div class="service">🔎<b>Pencarian koleksi</b><p>Telusuri buku berdasarkan judul dan kategori.</p></div><div class="service">💡<b>Sumber informasi</b><p>Referensi untuk mendukung pembelajaran.</p></div><div class="service">✍️<b>Kegiatan literasi</b><p>Wadah berbagi karya dan minat baca.</p></div></div></div></section>
-<section class="catalog" id="katalog"><div class="wrap"><div class="head"><small>JELAJAHI KOLEKSI</small><h2>Katalog buku</h2><p>15 judul berikut hanya data demo. Katalog 5.000+ buku nanti diimpor dari spreadsheet/database.</p></div><div class="tools"><input id="q" placeholder="Cari judul atau penulis..." oninput="draw()"><select id="cat" onchange="draw()"><option value="">Semua kategori</option><option>Fiksi</option><option>Bahasa</option><option>Pendidikan</option><option>Pengembangan Diri</option><option>Pengetahuan</option></select></div><div class="books" id="books"></div></div></section>
-<section id="kegiatan"><div class="wrap"><div class="head"><small>AKTIVITAS LITERASI</small><h2>Kegiatan perpustakaan</h2><p>Foto berikut ilustrasi sementara. Ganti dengan dokumentasi sekolah yang sudah mendapat izin.</p></div><div class="activities">
+<section class="hero" id="beranda"><div class="wrap heroGrid"><div><span class="pill">RUANG TUMBUH PENGETAHUAN</span><h1>Temukan ilmu,<br><span style="color:#9876b8">luaskan dunia.</span></h1><p>Selamat datang di website Perpustakaan Graha Sastra Kertha Langhu. Jelajahi koleksi bacaan, kenali layanan, dan temukan kegiatan literasi sekolah.</p><a class="btn" href="#katalog">Jelajahi katalog ↗</a><a class="btn alt" href="#profil">Profil perpustakaan</a><div class="notice-hours" style="margin-top:16px;padding:13px 16px;background:#fff;border:1px solid #e6dcef;border-radius:14px;color:#4b2b78;font-size:14px"><b>Jam Operasional:</b> Senin–Sabtu, 07:00–14:00 <span style="color:#756d80">| Minggu: Libur</span></div><div class="stats"><div class="stat"><b id="totalBooks">—</b><small>Koleksi buku</small></div><div class="stat"><b>07:00–14:00</b><small>Jam operasional</small></div><div class="stat"><b>Literasi</b><small>Ruang berkembang</small></div></div></div><img class="heroImg" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1100&q=85" alt="Ilustrasi perpustakaan"></div></section>
+<section id="profil"><div class="wrap"><div class="head"><small>TENTANG KAMI</small><h2>Lebih dekat dengan perpustakaan</h2><p>Informasi profil resmi dapat dilengkapi bersama pengelola perpustakaan.</p></div><div class="grid2"><div class="card"><h3>Profil singkat</h3><p>Graha Sastra Kertha Langhu merupakan ruang belajar yang menyediakan sumber informasi dan bahan bacaan untuk mendukung budaya literasi warga sekolah.</p></div><div class="card vision"><h3>Visi perpustakaan</h3><p>Menjadi pusat sumber belajar yang nyaman, informatif, dan mendorong tumbuhnya budaya literasi.</p><p style="margin-top:10px;font-size:10px">Visi di atas hanya contoh, bukan visi resmi.</p></div></div></div></section>
+<section id="layanan" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>FASILITAS</small><h2>Layanan perpustakaan</h2><p>Informasi layanan perpustakaan.</p></div><div class="services"><div class="service">📚<b>Baca di tempat</b><p>Ruang membaca dan belajar.</p></div><div class="service">🔎<b>Pencarian koleksi</b><p>Telusuri buku berdasarkan judul dan kategori.</p></div><div class="service">💡<b>Sumber informasi</b><p>Referensi untuk mendukung pembelajaran.</p></div><div class="service">✍️<b>Kegiatan literasi</b><p>Wadah berbagi karya dan minat baca.</p></div></div></div></section>
+<section class="catalog" id="katalog"><div class="wrap"><div class="head"><small>JELAJAHI KOLEKSI</small><h2>Katalog buku</h2><p>Telusuri koleksi perpustakaan melalui pencarian, kategori, dan halaman katalog.</p></div><div class="tools"><input id="q" placeholder="Cari judul, penulis, atau kode buku..."><select id="cat"><option value="">Semua kategori</option><option>Fiksi & Novel</option><option>Bahasa Asing</option><option>Pendidikan & Akademik</option><option>Keterampilan & Panduan Praktis</option><option>Pengembangan Diri & Psikologi</option><option>Komik & Manga</option></select></div><div id="catalogStatus" class="card" style="margin-bottom:14px">Menghubungkan katalog...</div><div class="books" id="books"></div><div id="pagination" style="display:flex;justify-content:center;align-items:center;gap:12px;margin-top:22px"></div></div></section>
+<section id="kegiatan"><div class="wrap"><div class="head"><small>AKTIVITAS LITERASI</small><h2>Kegiatan perpustakaan</h2><p>Dokumentasi kegiatan literasi perpustakaan.</p></div><div class="activities">
 <div class="activity"><img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Belajar bersama"><div><b>Gerakan membaca bersama</b><p>Contoh program membangun kebiasaan membaca.</p></div></div>
 <div class="activity"><img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80" alt="Diskusi siswa"><div><b>Diskusi dan berbagi pengetahuan</b><p>Contoh diskusi buku dan bertukar ide.</p></div></div>
 <div class="activity"><img src="https://images.unsplash.com/photo-1455390582262-044cdux?auto=format&fit=crop&w=800&q=80" alt="Menulis"><div><b>Apresiasi karya pemustaka</b><p>Contoh ruang menampilkan karya siswa.</p></div></div></div></div></section>
-<section id="info" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>KUNJUNGI KAMI</small><h2>Informasi perpustakaan</h2><p>Jadwal dan kontak ini hanya contoh. Konfirmasi kepada petugas.</p></div><div class="schedule"><div class="card"><h3>Jam operasional</h3><div class="row"><span>Senin–Kamis</span><span>08.00–14.00</span></div><div class="row"><span>Jumat</span><span>08.00–11.30</span></div><div class="row"><span>Sabtu–Minggu</span><span>Tutup</span></div></div><div class="card"><h3>Kontak & lokasi</h3><div class="row"><span>Lokasi</span><span>Banjarangkan, Bali</span></div><div class="row"><span>Email</span><span>email-contoh</span></div><div class="row"><span>Pengelola</span><span>Petugas perpustakaan</span></div></div></div></div></section>
-</main><footer><div class="wrap foot"><div><b>AKSHARA SARASWATI WIDYA LOKA</b><p>Website informasi dan katalog Perpustakaan SMA Negeri 1 Banjarangkan. Konten saat ini masih berupa contoh.</p></div><div><b>Navigasi</b><p><a href="#profil">Profil</a><br><a href="#katalog">Katalog</a><br><a href="#kegiatan">Kegiatan</a></p></div><div><b>Informasi</b><p><a href="#info">Jam layanan</a><br><a href="#beranda">Kembali ke atas</a></p></div></div></footer>
-<script>
-const data=[
-["Laskar Pelangi","Andrea Hirata","Fiksi"],["Berani Tidak Disukai","Ichiro Kishimi & Fumitake Koga","Pengembangan Diri"],["Fun & Easy Speaking English!","Tim Penyusun","Bahasa"],["Dasar-Dasar Organisasi","Tim Penyusun","Pendidikan"],["Bumi","Tere Liye","Fiksi"],["Mahir Bahasa Mandarin dari Nol","Tim Penyusun","Bahasa"],["Ensiklopedia Sains","Tim Redaksi","Pengetahuan"],["How to Respect Myself","Yoon Hong-gyun","Pengembangan Diri"],["Sejarah Indonesia","Tim Penyusun","Pendidikan"],["Negeri 5 Menara","Ahmad Fuadi","Fiksi"],["Pintar Intisari Kata Bahasa Indonesia","Tim Penyusun","Bahasa"],["Rahasia Nekat","Dimas Jayadinekat","Pengembangan Diri"],["Atlas Dunia","Tim Kartografi","Pengetahuan"],["Thomas dan Friends","Rev. W. Awdry","Fiksi"],["Start Smart","Pam Schiller","Pendidikan"]];
-function draw(){let q=document.getElementById('q').value.toLowerCase(),c=document.getElementById('cat').value;let found=data.filter(b=>(b[0]+' '+b[1]).toLowerCase().includes(q)&&(!c||b[2]===c));document.getElementById('books').innerHTML=found.length?found.map(b=>`<article class="book"><div class="cover">${b[0]}</div><div class="bookInfo"><b>${b[0]}</b><small>${b[1]}</small><span class="tag">${b[2]}</span></div></article>`).join(''):'<div class="card">Buku tidak ditemukan.</div>'}draw();
+<section id="info" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>KUNJUNGI KAMI</small><h2>Informasi perpustakaan</h2><p>Informasi kunjungan perpustakaan.</p></div><div class="schedule"><div class="card"><h3>Jam operasional</h3><div class="row"><span>Senin–Sabtu</span><span>07.00–14.00</span></div><div class="row"><span>Minggu</span><span>Libur</span></div></div><div class="card"><h3>Kontak & lokasi</h3><div class="row"><span>Lokasi</span><span>Banjarangkan, Bali</span></div><div class="row"><span>Email</span><span>email-contoh</span></div><div class="row"><span>Pengelola</span><span>Petugas perpustakaan</span></div></div></div></div></section>
+<section id="petugas" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>PENGELOLA</small><h2>Area petugas</h2><p>Masuk menggunakan akun petugas yang dibuat melalui Supabase Authentication.</p></div><div class="card" style="max-width:560px"><div id="adminLogin"><label>Email petugas</label><input id="adminEmail" type="email" autocomplete="username" style="display:block;width:100%;padding:12px;border:1px solid #ded3e8;border-radius:10px;margin:6px 0 12px"><label>Kata sandi</label><input id="adminPassword" type="password" autocomplete="current-password" style="display:block;width:100%;padding:12px;border:1px solid #ded3e8;border-radius:10px;margin:6px 0 12px"><button class="btn" id="loginBtn" type="button">Masuk</button><p id="authMessage" aria-live="polite"></p></div><div id="adminTools" hidden><b id="adminWelcome">Petugas masuk</b><p>Tambah buku baru ke katalog.</p><input id="bookTitle" placeholder="Judul buku" style="display:block;width:100%;padding:10px;margin:8px 0;border:1px solid #ded3e8;border-radius:8px"><input id="bookAuthor" placeholder="Pengarang" style="display:block;width:100%;padding:10px;margin:8px 0;border:1px solid #ded3e8;border-radius:8px"><input id="bookCode" placeholder="Kode buku" style="display:block;width:100%;padding:10px;margin:8px 0;border:1px solid #ded3e8;border-radius:8px"><select id="bookCategory" style="display:block;width:100%;padding:10px;margin:8px 0;border:1px solid #ded3e8;border-radius:8px"><option>Fiksi & Novel</option><option>Bahasa Asing</option><option>Pendidikan & Akademik</option><option>Keterampilan & Panduan Praktis</option><option>Pengembangan Diri & Psikologi</option><option>Komik & Manga</option></select><button class="btn" id="addBookBtn" type="button">Simpan buku</button><button class="btn alt" id="logoutBtn" type="button">Keluar</button><p id="adminMessage" aria-live="polite"></p></div></div></div></section>
+</main><footer><div class="wrap foot"><div><b>GRAHA SASTRA KERTHA LANGHU</b><p>Website informasi dan katalog Perpustakaan SMA Negeri 1 Banjarangkan.</p></div><div><b>Navigasi</b><p><a href="#profil">Profil</a><br><a href="#katalog">Katalog</a><br><a href="#kegiatan">Kegiatan</a></p></div><div><b>Informasi</b><p><a href="#info">Jam layanan</a><br><a href="#beranda">Kembali ke atas</a></p></div></div></footer>
+<script type="module">
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+
+/* ISI DUA NILAI INI DARI PROJECT SUPABASE BARU MILIK PERPUSTAKAAN.
+   Gunakan Project URL dan anon/public key. JANGAN tempel service_role key. */
+const SUPABASE_URL = "ISI_PROJECT_URL_SUPABASE";
+const SUPABASE_ANON_KEY = "ISI_ANON_PUBLIC_KEY";
+const PAGE_SIZE = 20;
+
+const statusEl = document.getElementById("catalogStatus");
+const booksEl = document.getElementById("books");
+const paginationEl = document.getElementById("pagination");
+const totalEl = document.getElementById("totalBooks");
+const qEl = document.getElementById("q");
+const catEl = document.getElementById("cat");
+let supabase = null, currentPage = 0, totalPages = 0, searchTimer;
+
+function status(message) { statusEl.textContent = message; }
+function escapeHTML(value="") {
+  return String(value).replace(/[&<>"']/g, ch => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+}
+function renderBooks(rows) {
+  booksEl.innerHTML = rows.length ? rows.map(book => `
+    <article class="book">
+      <div class="cover">${escapeHTML(book.title)}</div>
+      <div class="bookInfo">
+        <b>${escapeHTML(book.title)}</b>
+        <small>${escapeHTML(book.author || "Pengarang belum dicantumkan")}</small>
+        <span class="tag">${escapeHTML(book.category || "Belum dikategorikan")}</span>
+        ${book.book_code ? `<small>Kode: ${escapeHTML(book.book_code)}</small>` : ""}
+      </div>
+    </article>`).join("") : '<div class="card">Belum ada buku yang cocok dengan pencarian ini.</div>';
+}
+function renderPagination() {
+  if (!totalPages) { paginationEl.innerHTML = ""; return; }
+  paginationEl.innerHTML = `
+    <button class="btn alt" id="prevPage" ${currentPage===0?"disabled":""}>‹ Sebelumnya</button>
+    <span>Halaman ${currentPage+1} dari ${totalPages}</span>
+    <button class="btn alt" id="nextPage" ${currentPage>=totalPages-1?"disabled":""}>Berikutnya ›</button>`;
+  document.getElementById("prevPage").onclick = () => { currentPage--; loadBooks(); };
+  document.getElementById("nextPage").onclick = () => { currentPage++; loadBooks(); };
+}
+async function loadBooks() {
+  if (!supabase) return;
+  status("Memuat katalog...");
+  let query = supabase.from("books").select("id,book_code,title,author,category", {count:"exact"});
+  const term = qEl.value.trim();
+  if (term) query = query.or(`title.ilike.%${term}%,author.ilike.%${term}%,book_code.ilike.%${term}%`);
+  if (catEl.value) query = query.eq("category", catEl.value);
+  const from = currentPage * PAGE_SIZE;
+  const {data,error,count} = await query.order("title",{ascending:true}).range(from,from+PAGE_SIZE-1);
+  if (error) { status("Katalog belum dapat dimuat. Periksa koneksi dan pengaturan database."); booksEl.innerHTML=""; console.error(error); return; }
+  totalPages = Math.ceil((count || 0)/PAGE_SIZE);
+  if (currentPage >= totalPages && totalPages > 0) { currentPage=totalPages-1; return loadBooks(); }
+  totalEl.textContent = (count || 0).toLocaleString("id-ID");
+  status(`Menampilkan ${data.length} dari ${(count || 0).toLocaleString("id-ID")} buku · ${PAGE_SIZE} buku per halaman`);
+  renderBooks(data); renderPagination();
+}
+function setAuthMessage(text) { document.getElementById("authMessage").textContent=text; }
+function setAdminMessage(text) { document.getElementById("adminMessage").textContent=text; }
+function showSession(session) {
+  document.getElementById("adminLogin").hidden = !!session;
+  document.getElementById("adminTools").hidden = !session;
+}
+if (SUPABASE_URL.startsWith("https://") && SUPABASE_ANON_KEY.length > 20) {
+  supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+  qEl.addEventListener("input", () => { clearTimeout(searchTimer); searchTimer=setTimeout(()=>{currentPage=0;loadBooks();},300); });
+  catEl.addEventListener("change", () => { currentPage=0;loadBooks(); });
+  await loadBooks();
+  const {data:{session}} = await supabase.auth.getSession();
+  showSession(session);
+  supabase.auth.onAuthStateChange((_event,newSession)=>showSession(newSession));
+  document.getElementById("loginBtn").onclick = async () => {
+    setAuthMessage("Memeriksa akun...");
+    const {error} = await supabase.auth.signInWithPassword({
+      email:document.getElementById("adminEmail").value.trim(),
+      password:document.getElementById("adminPassword").value
+    });
+    setAuthMessage(error ? "Login gagal. Periksa email dan kata sandi petugas." : "Berhasil masuk.");
+  };
+  document.getElementById("logoutBtn").onclick = async () => { await supabase.auth.signOut(); };
+  document.getElementById("addBookBtn").onclick = async () => {
+    const title=document.getElementById("bookTitle").value.trim();
+    const author=document.getElementById("bookAuthor").value.trim();
+    const book_code=document.getElementById("bookCode").value.trim();
+    const category=document.getElementById("bookCategory").value;
+    if (!title) { setAdminMessage("Judul buku wajib diisi."); return; }
+    const {error}=await supabase.from("books").insert({title,author,book_code,category});
+    if (error) { setAdminMessage("Buku belum tersimpan. Pastikan akun memiliki hak admin dan kode buku tidak duplikat."); console.error(error); }
+    else { setAdminMessage("Buku berhasil ditambahkan."); ["bookTitle","bookAuthor","bookCode"].forEach(id=>document.getElementById(id).value=""); currentPage=0; await loadBooks(); }
+  };
+} else {
+  status("Katalog menunggu pengaturan Supabase. Setelah URL dan anon key diisi, buku akan tampil di sini.");
+  booksEl.innerHTML = '<div class="card">Database belum dihubungkan.</div>';
+  totalEl.textContent = "—";
+}
 </script></body></html>
