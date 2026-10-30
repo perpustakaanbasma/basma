@@ -1,62 +1,38 @@
 <!doctype html>
-<html lang="id">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Area Admin | Graha Sastra Kertha Langhu</title>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin | Graha Sastra Kertha Langhu</title>
 <style>
-:root{--p:#4b2b78;--d:#2f194f;--l:#f3edf9;--ink:#292333;--muted:#756d80}
-*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#f3edf9,#fcfaff);font:15px Arial,sans-serif;color:var(--ink);min-height:100vh;display:grid;place-items:center;padding:22px}
-main{width:min(100%,520px)}.brand{font:600 25px/1.2 Georgia,"Times New Roman",serif;color:var(--d);margin-bottom:7px}.sub{color:var(--muted);margin:0 0 22px}.card{background:#fff;border:1px solid #e7deef;border-radius:20px;padding:25px;box-shadow:0 15px 40px #4b2b7814}h2{margin:0 0 7px;color:var(--d)}p{color:var(--muted);font-size:13px}label{display:block;font-weight:bold;font-size:13px;margin:14px 0 6px}input,select{width:100%;padding:12px;border:1px solid #ded3e8;border-radius:10px;font:inherit;background:#fff}button,.back{display:inline-block;border:0;border-radius:11px;padding:12px 17px;background:var(--p);color:white;font-weight:bold;text-decoration:none;font-size:14px;cursor:pointer;margin:15px 8px 0 0}button.alt{background:white;color:var(--d);border:1px solid #ddd1e9}.message{min-height:22px}.hidden{display:none!important}.topline{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}
-</style>
-</head>
-<body>
-<main>
-  <div class="brand">Graha Sastra<br>Kertha Langhu</div>
-  <p class="sub">Area pengelola perpustakaan · SMA Negeri 1 Banjarangkan</p>
-  <section class="card" id="loginPanel">
-    <h2>Masuk petugas</h2><p>Halaman ini khusus untuk pengelola perpustakaan.</p>
-    <label for="email">Email petugas</label><input id="email" type="email" autocomplete="username">
-    <label for="password">Kata sandi</label><input id="password" type="password" autocomplete="current-password">
-    <button id="loginBtn" type="button">Masuk</button><p class="message" id="loginMessage" aria-live="polite"></p>
-  </section>
-  <section class="card hidden" id="adminPanel">
-    <div class="topline"><h2>Kelola katalog</h2><button class="alt" id="logoutBtn" type="button">Keluar</button></div>
-    <p id="welcome">Petugas berhasil masuk.</p>
-    <label for="title">Judul buku</label><input id="title" placeholder="Masukkan judul buku">
-    <label for="author">Pengarang</label><input id="author" placeholder="Nama pengarang">
-    <label for="code">Kode buku</label><input id="code" placeholder="Kode buku">
-    <label for="category">Kategori</label>
-    <select id="category">
-      <option>Fiksi & Novel</option><option>Bahasa Asing</option><option>Pendidikan & Akademik</option>
-      <option>Keterampilan & Panduan Praktis</option><option>Pengembangan Diri & Psikologi</option><option>Komik & Manga</option>
-    </select>
-    <button id="saveBtn" type="button">Simpan buku</button>
-    <p class="message" id="adminMessage" aria-live="polite"></p>
-  </section>
-  <p><a class="back" href="/">Kembali ke website perpustakaan</a></p>
+:root{--p:#4b2b78;--d:#2f194f;--bg:#f7f3fb;--ink:#292333;--muted:#756d80;--line:#e8dfef}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px Arial,sans-serif;line-height:1.5}.wrap{width:min(1000px,calc(100% - 28px));margin:auto}.top{background:var(--d);color:white;padding:18px 0}.brand{font:600 23px/1.2 Georgia,serif}.top small{opacity:.8}.card{background:white;border:1px solid var(--line);border-radius:16px;padding:18px;margin:16px 0}.hidden{display:none!important}h2,h3{color:var(--d);margin:0 0 10px}p,.muted{color:var(--muted)}label{display:block;font-weight:700;font-size:13px;margin:12px 0 5px}input,select,textarea{width:100%;padding:11px;border:1px solid #dcd1e7;border-radius:9px;font:inherit;background:white}textarea{min-height:85px;resize:vertical}button,.linkbtn{border:0;border-radius:9px;padding:11px 15px;background:var(--p);color:white;font-weight:700;cursor:pointer;text-decoration:none;display:inline-block;margin:8px 6px 0 0}button.secondary{background:white;color:var(--d);border:1px solid var(--line)}button.danger{background:#9d3434}.tabs{display:flex;gap:8px;flex-wrap:wrap}.tabs button.active{background:var(--d)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.item{border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0;display:grid;grid-template-columns:90px 1fr;gap:12px}.item img{width:90px;height:100px;object-fit:cover;border-radius:8px}.item small{color:var(--muted)}.status{font-size:12px;font-weight:bold;color:#704a96}.msg{min-height:22px;color:#5b3c7d;font-size:13px}.bar{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.note{background:#f4eff9;padding:12px;border-radius:10px;font-size:13px;color:#57446b}@media(max-width:600px){.grid{grid-template-columns:1fr}.item{grid-template-columns:76px 1fr}.item img{width:76px;height:88px}}
+</style></head><body>
+<div class="top"><div class="wrap"><div class="brand">Graha Sastra Kertha Langhu</div><small>Area pengelola perpustakaan · SMA Negeri 1 Banjarangkan</small></div></div>
+<main class="wrap">
+<section id="login" class="card"><h2>Masuk petugas</h2><p>Halaman khusus pengelola perpustakaan.</p><label>Email petugas</label><input id="email" type="email" autocomplete="username"><label>Kata sandi</label><input id="password" type="password" autocomplete="current-password"><button id="loginBtn">Masuk</button><p class="msg" id="loginMsg"></p></section>
+<section id="panel" class="hidden">
+ <div class="card"><div class="bar"><div><h2>Panel pengelola</h2><p id="welcome">Petugas</p></div><button class="secondary" id="logout">Keluar</button></div><div class="note">Konten berstatus Draft hanya terlihat di halaman admin. Pilih Terbit agar tampil di website pengunjung.</div></div>
+ <div class="card"><div class="tabs"><button class="active" data-tab="books">Katalog buku</button><button data-tab="activities">Dokumentasi kegiatan</button><button data-tab="works">Karya pemustaka</button></div></div>
+ <section id="tab-books" class="card"><h2>Tambah buku</h2><div class="grid"><div><label>Judul buku *</label><input id="bookTitle"></div><div><label>Pengarang</label><input id="bookAuthor"></div><div><label>Kode buku</label><input id="bookCode"></div><div><label>Kategori</label><select id="bookCategory"><option>Fiksi & Novel</option><option>Bahasa Asing</option><option>Pendidikan & Akademik</option><option>Keterampilan & Panduan Praktis</option><option>Pengembangan Diri & Psikologi</option><option>Komik & Manga</option></select></div></div><button id="saveBook">Simpan buku</button><p id="bookMsg" class="msg"></p></section>
+ <section id="tab-activities" class="card hidden"><h2>Dokumentasi kegiatan</h2><input type="hidden" id="activityId"><label>Judul kegiatan *</label><input id="activityTitle"><label>Deskripsi</label><textarea id="activityDesc"></textarea><label>Tanggal kegiatan</label><input id="activityDate" type="date"><label>Foto kegiatan *</label><input id="activityImage" type="file" accept="image/jpeg,image/png,image/webp"><label>Status publikasi</label><select id="activityStatus"><option value="draft">Draft</option><option value="published">Terbit</option></select><button id="saveActivity">Simpan dokumentasi</button><button class="secondary" id="cancelActivity">Batal edit</button><p class="msg" id="activityMsg"></p><h3>Daftar dokumentasi</h3><div id="activityList"></div></section>
+ <section id="tab-works" class="card hidden"><h2>Karya pemustaka</h2><input type="hidden" id="workId"><label>Judul karya *</label><input id="workTitle"><label>Nama pembuat (dengan persetujuan)</label><input id="workCreator"><label>Kategori karya</label><select id="workCategory"><option>Puisi</option><option>Cerpen</option><option>Artikel</option><option>Esai</option><option>Ilustrasi</option><option>Fotografi</option><option>Lainnya</option></select><label>Deskripsi</label><textarea id="workDesc"></textarea><label>Foto/berkas gambar karya *</label><input id="workImage" type="file" accept="image/jpeg,image/png,image/webp"><label>Status publikasi</label><select id="workStatus"><option value="draft">Draft</option><option value="published">Terbit</option></select><button id="saveWork">Simpan karya</button><button class="secondary" id="cancelWork">Batal edit</button><p class="msg" id="workMsg"></p><h3>Daftar karya</h3><div id="workList"></div></section>
+</section><p><a class="linkbtn" href="/">Kembali ke website publik</a></p>
 </main>
 <script type="module">
-import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
-const SUPABASE_URL = "https://pupruiplfpfplymobnjp.supabase.co";
-const SUPABASE_ANON_KEY = "sb_publishable_mPDOEnYiHs9NmnTnlDvm0A_bQY0NAJ1";
-const db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
-const $ = id => document.getElementById(id);
-function show(session){$("loginPanel").classList.toggle("hidden",!!session);$("adminPanel").classList.toggle("hidden",!session);}
-const {data:{session}} = await db.auth.getSession(); show(session);
-db.auth.onAuthStateChange((_event,s)=>show(s));
-$("loginBtn").onclick=async()=>{
-  $("loginMessage").textContent="Memeriksa akun...";
-  const {error}=await db.auth.signInWithPassword({email:$("email").value.trim(),password:$("password").value});
-  $("loginMessage").textContent=error?"Login gagal. Periksa email dan kata sandi petugas.":"Berhasil masuk.";
-};
-$("logoutBtn").onclick=async()=>{await db.auth.signOut();};
-$("saveBtn").onclick=async()=>{
-  const title=$("title").value.trim(),author=$("author").value.trim(),book_code=$("code").value.trim(),category=$("category").value;
-  if(!title){$("adminMessage").textContent="Judul buku wajib diisi.";return;}
-  $("adminMessage").textContent="Menyimpan buku...";
-  const {error}=await db.from("books").insert({title,author,book_code,category});
-  if(error){$("adminMessage").textContent="Buku belum tersimpan. Periksa izin admin dan pastikan kode buku tidak duplikat.";console.error(error);}
-  else{$("adminMessage").textContent="Buku berhasil ditambahkan.";["title","author","code"].forEach(id=>$(id).value="");}
-};
-</script>
-</body></html>
+import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+const URL='https://pupruiplfpfplymobnjp.supabase.co';const KEY='sb_publishable_mPDOEnYiHs9NmnTnlDvm0A_bQY0NAJ1';const db=createClient(URL,KEY);const $=id=>document.getElementById(id);let user=null;
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function msg(id,t){$(id).textContent=t}
+function show(ok){$('login').classList.toggle('hidden',ok);$('panel').classList.toggle('hidden',!ok)}
+async function checkSession(){const {data:{session}}=await db.auth.getSession();user=session?.user||null;if(user&&user.app_metadata?.role==='admin'){show(true);$('welcome').textContent='Masuk sebagai '+(user.email||'petugas');await loadLists()}else{show(false);if(user){await db.auth.signOut();msg('loginMsg','Akun ini belum memiliki hak admin.');}}}
+$('loginBtn').onclick=async()=>{msg('loginMsg','Memeriksa akun...');const {error}=await db.auth.signInWithPassword({email:$('email').value.trim(),password:$('password').value});if(error){msg('loginMsg','Login gagal. Periksa email dan kata sandi.');return}await db.auth.refreshSession();await checkSession()};
+$('logout').onclick=async()=>{await db.auth.signOut();user=null;show(false)};db.auth.onAuthStateChange(()=>{setTimeout(checkSession,0)});
+document.querySelectorAll('[data-tab]').forEach(b=>b.onclick=()=>{document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x===b));['books','activities','works'].forEach(t=>$('tab-'+t).classList.toggle('hidden',t!==b.dataset.tab));});
+$('saveBook').onclick=async()=>{let title=$('bookTitle').value.trim();if(!title){msg('bookMsg','Judul buku wajib diisi.');return}msg('bookMsg','Menyimpan...');const {error}=await db.from('books').insert({title,author:$('bookAuthor').value.trim(),book_code:$('bookCode').value.trim(),category:$('bookCategory').value});msg('bookMsg',error?'Gagal menyimpan. Periksa izin tabel books atau kode duplikat.':'Buku berhasil disimpan.');if(!error)['bookTitle','bookAuthor','bookCode'].forEach(id=>$(id).value='')};
+async function upload(file,kind){if(!file)return null;if(!['image/jpeg','image/png','image/webp'].includes(file.type))throw Error('Gunakan JPG, PNG, atau WebP.');if(file.size>5*1024*1024)throw Error('Ukuran foto maksimal 5 MB.');const ext=file.type==='image/png'?'png':file.type==='image/webp'?'webp':'jpg';const path=`${kind}/${Date.now()}-${crypto.randomUUID()}.${ext}`;const {error}=await db.storage.from('library-media').upload(path,file,{upsert:false,contentType:file.type});if(error)throw error;return path}
+async function removeOld(path){if(path)await db.storage.from('library-media').remove([path])}
+async function saveContent(kind){const isA=kind==='activities',id=$(isA?'activityId':'workId').value;const title=$(isA?'activityTitle':'workTitle').value.trim();const file=$(isA?'activityImage':'workImage').files[0];const old=window[`${kind}OldPath`]||null;const msgId=isA?'activityMsg':'workMsg';if(!title){msg(msgId,'Judul wajib diisi.');return}if(!id&&!file){msg(msgId,'Pilih foto terlebih dahulu.');return}msg(msgId,'Menyimpan foto dan data...');try{let path=old;if(file){path=await upload(file,kind);if(old)await removeOld(old)}const row=isA?{title,description:$('activityDesc').value.trim(),event_date:$('activityDate').value||null,image_path:path,status:$('activityStatus').value}:{title,creator_name:$('workCreator').value.trim(),category:$('workCategory').value,description:$('workDesc').value.trim(),image_path:path,status:$('workStatus').value};const table=isA?'library_activities':'library_works';const result=id?await db.from(table).update(row).eq('id',id):await db.from(table).insert(row);if(result.error)throw result.error;msg(msgId,'Berhasil disimpan.');resetForm(kind);await loadLists()}catch(e){console.error(e);msg(msgId,'Gagal: '+(e.message||'Periksa koneksi dan aturan akses Supabase.'))}}
+$('saveActivity').onclick=()=>saveContent('activities');$('saveWork').onclick=()=>saveContent('works');
+function resetForm(kind){const a=kind==='activities';const ids=a?['activityId','activityTitle','activityDesc','activityDate']:['workId','workTitle','workCreator','workDesc'];ids.forEach(id=>$(id).value='');$(a?'activityImage':'workImage').value='';$(a?'activityStatus':'workStatus').value='draft';window[kind+'OldPath']=null}
+$('cancelActivity').onclick=()=>resetForm('activities');$('cancelWork').onclick=()=>resetForm('works');
+async function loadLists(){await Promise.all([list('activities'),list('works')])}
+async function list(kind){const a=kind==='activities',table=a?'library_activities':'library_works',target=$(a?'activityList':'workList');const {data,error}=await db.from(table).select('*').order('created_at',{ascending:false});if(error){target.textContent='Daftar gagal dimuat: '+error.message;return}target.innerHTML=data.length?data.map(x=>{const url=x.image_path?db.storage.from('library-media').getPublicUrl(x.image_path).data.publicUrl:'';return `<article class="item"><img src="${esc(url)}" alt=""><div><b>${esc(x.title)}</b><br><small>${esc(a?(x.event_date||'Tanggal belum diisi'):(x.creator_name||'Tanpa nama pembuat'))}</small><br><span class="status">${x.status==='published'?'TERBIT':'DRAFT'}</span><br><button class="secondary" data-edit="${esc(x.id)}" data-kind="${kind}">Edit</button><button class="danger" data-delete="${esc(x.id)}" data-kind="${kind}">Hapus</button></div></article>`}).join(''):'<p>Belum ada data.</p>'}
+document.addEventListener('click',async e=>{const ed=e.target.closest('[data-edit]'),del=e.target.closest('[data-delete]');if(ed){const kind=ed.dataset.kind,a=kind==='activities',table=a?'library_activities':'library_works';const {data,error}=await db.from(table).select('*').eq('id',ed.dataset.edit).single();if(error){alert('Gagal membuka data.');return}if(a){$('activityId').value=data.id;$('activityTitle').value=data.title;$('activityDesc').value=data.description||'';$('activityDate').value=data.event_date||'';$('activityStatus').value=data.status;window.activitiesOldPath=data.image_path}else{$('workId').value=data.id;$('workTitle').value=data.title;$('workCreator').value=data.creator_name||'';$('workCategory').value=data.category||'Lainnya';$('workDesc').value=data.description||'';$('workStatus').value=data.status;window.worksOldPath=data.image_path}document.querySelector(`[data-tab="${kind}"]`).click();window.scrollTo({top:0,behavior:'smooth'});}if(del){if(!confirm('Hapus konten ini?'))return;const kind=del.dataset.kind,table=kind==='activities'?'library_activities':'library_works';const {data}=await db.from(table).select('image_path').eq('id',del.dataset.delete).single();const {error}=await db.from(table).delete().eq('id',del.dataset.delete);if(error)alert('Gagal menghapus: '+error.message);else{if(data?.image_path)await removeOld(data.image_path);await loadLists()}}});
+await checkSession();
+</script></body></html>
