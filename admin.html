@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Area Admin | Graha Sastra Kertha Langhu</title>
+<style>
+:root{--p:#4b2b78;--d:#2f194f;--l:#f3edf9;--ink:#292333;--muted:#756d80}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(135deg,#f3edf9,#fcfaff);font:15px Arial,sans-serif;color:var(--ink);min-height:100vh;display:grid;place-items:center;padding:22px}
+main{width:min(100%,520px)}.brand{font:600 25px/1.2 Georgia,"Times New Roman",serif;color:var(--d);margin-bottom:7px}.sub{color:var(--muted);margin:0 0 22px}.card{background:#fff;border:1px solid #e7deef;border-radius:20px;padding:25px;box-shadow:0 15px 40px #4b2b7814}h2{margin:0 0 7px;color:var(--d)}p{color:var(--muted);font-size:13px}label{display:block;font-weight:bold;font-size:13px;margin:14px 0 6px}input,select{width:100%;padding:12px;border:1px solid #ded3e8;border-radius:10px;font:inherit;background:#fff}button,.back{display:inline-block;border:0;border-radius:11px;padding:12px 17px;background:var(--p);color:white;font-weight:bold;text-decoration:none;font-size:14px;cursor:pointer;margin:15px 8px 0 0}button.alt{background:white;color:var(--d);border:1px solid #ddd1e9}.message{min-height:22px}.hidden{display:none!important}.topline{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:18px}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Graha Sastra<br>Kertha Langhu</div>
+  <p class="sub">Area pengelola perpustakaan · SMA Negeri 1 Banjarangkan</p>
+  <section class="card" id="loginPanel">
+    <h2>Masuk petugas</h2><p>Halaman ini khusus untuk pengelola perpustakaan.</p>
+    <label for="email">Email petugas</label><input id="email" type="email" autocomplete="username">
+    <label for="password">Kata sandi</label><input id="password" type="password" autocomplete="current-password">
+    <button id="loginBtn" type="button">Masuk</button><p class="message" id="loginMessage" aria-live="polite"></p>
+  </section>
+  <section class="card hidden" id="adminPanel">
+    <div class="topline"><h2>Kelola katalog</h2><button class="alt" id="logoutBtn" type="button">Keluar</button></div>
+    <p id="welcome">Petugas berhasil masuk.</p>
+    <label for="title">Judul buku</label><input id="title" placeholder="Masukkan judul buku">
+    <label for="author">Pengarang</label><input id="author" placeholder="Nama pengarang">
+    <label for="code">Kode buku</label><input id="code" placeholder="Kode buku">
+    <label for="category">Kategori</label>
+    <select id="category">
+      <option>Fiksi & Novel</option><option>Bahasa Asing</option><option>Pendidikan & Akademik</option>
+      <option>Keterampilan & Panduan Praktis</option><option>Pengembangan Diri & Psikologi</option><option>Komik & Manga</option>
+    </select>
+    <button id="saveBtn" type="button">Simpan buku</button>
+    <p class="message" id="adminMessage" aria-live="polite"></p>
+  </section>
+  <p><a class="back" href="/">Kembali ke website perpustakaan</a></p>
+</main>
+<script type="module">
+import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+const SUPABASE_URL = "https://pupruiplfpfplymobnjp.supabase.co";
+const SUPABASE_ANON_KEY = "sb_publishable_mPDOEnYiHs9NmnTnlDvm0A_bQY0NAJ1";
+const db = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const $ = id => document.getElementById(id);
+function show(session){$("loginPanel").classList.toggle("hidden",!!session);$("adminPanel").classList.toggle("hidden",!session);}
+const {data:{session}} = await db.auth.getSession(); show(session);
+db.auth.onAuthStateChange((_event,s)=>show(s));
+$("loginBtn").onclick=async()=>{
+  $("loginMessage").textContent="Memeriksa akun...";
+  const {error}=await db.auth.signInWithPassword({email:$("email").value.trim(),password:$("password").value});
+  $("loginMessage").textContent=error?"Login gagal. Periksa email dan kata sandi petugas.":"Berhasil masuk.";
+};
+$("logoutBtn").onclick=async()=>{await db.auth.signOut();};
+$("saveBtn").onclick=async()=>{
+  const title=$("title").value.trim(),author=$("author").value.trim(),book_code=$("code").value.trim(),category=$("category").value;
+  if(!title){$("adminMessage").textContent="Judul buku wajib diisi.";return;}
+  $("adminMessage").textContent="Menyimpan buku...";
+  const {error}=await db.from("books").insert({title,author,book_code,category});
+  if(error){$("adminMessage").textContent="Buku belum tersimpan. Periksa izin admin dan pastikan kode buku tidak duplikat.";console.error(error);}
+  else{$("adminMessage").textContent="Buku berhasil ditambahkan.";["title","author","code"].forEach(id=>$(id).value="");}
+};
+</script>
+</body></html>
