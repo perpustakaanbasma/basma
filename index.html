@@ -24,10 +24,18 @@ section{padding:58px 0}.head{margin-bottom:22px}.head small{color:#8c68ad;font-w
 .schedule{display:grid;grid-template-columns:1fr 1fr;gap:16px}.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #eee8f3;font-size:13px}.row:last-child{border:0}.row span:last-child{font-weight:bold;color:#75529a}
 footer{background:#241536;color:white;padding:34px 0}footer p{font-size:12px;color:#c7b9d4}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px}
 #photoLightbox{position:fixed;inset:0;z-index:1000;background:rgba(20,12,30,.92);display:none;align-items:center;justify-content:center;padding:18px}#photoLightbox.open{display:flex}#photoLightbox img{max-width:96vw;max-height:88vh;width:auto;height:auto;object-fit:contain;border-radius:10px}#photoLightbox button{position:absolute;top:14px;right:14px;border:1px solid #ffffff66;background:#38234f;color:#fff;border-radius:50%;width:42px;height:42px;font-size:24px;cursor:pointer}#photoLightbox .hint{position:absolute;bottom:12px;color:#fff;font-size:12px;text-align:center}
+
+/* Fitur tambahan katalog */
+.book{cursor:pointer;transition:transform .18s,box-shadow .18s}.book:hover{transform:translateY(-3px);box-shadow:0 10px 24px #4b2b7818}
+.bookActions{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}.miniBtn{border:1px solid #dfd3e9;background:#fff;color:#4b2b78;border-radius:8px;padding:7px 9px;font-size:11px;font-weight:bold;cursor:pointer}.miniBtn.primary{background:#4b2b78;color:#fff}
+.favSection,.popularSection{background:#fbf9fd}.featureBooks{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
+.modal{position:fixed;inset:0;background:#1c1229b8;z-index:1100;display:none;align-items:center;justify-content:center;padding:16px}.modal.open{display:flex}.modalBox{background:#fff;border-radius:18px;width:min(620px,100%);max-height:90vh;overflow:auto;padding:22px;position:relative}.modalClose{position:absolute;right:14px;top:12px;border:0;background:#f1eaf7;color:#3b2458;border-radius:50%;width:36px;height:36px;font-size:22px;cursor:pointer}.modalBox h2,.modalBox h3{color:#2f194f}.detailCover{background:linear-gradient(145deg,#a88bc4,#4b2b78);color:#fff;padding:25px;border-radius:14px;font: bold 23px Georgia;text-align:center;margin:12px 0}.reviewForm input,.reviewForm textarea{width:100%;padding:10px;border:1px solid #ded3e8;border-radius:9px;margin:5px 0 10px;font:inherit}.reviewList{display:grid;gap:9px;margin-top:12px}.reviewItem{background:#f8f5fb;padding:11px;border-radius:10px}.stars{color:#d39a24;letter-spacing:2px}.mutedSmall{font-size:12px;color:#756d80}
+@media(max-width:760px){.featureBooks{grid-template-columns:repeat(2,1fr)}}
+
 @media(max-width:760px){.nav{align-items:flex-start;flex-direction:column;padding:10px 0}nav{width:100%;overflow-x:auto;flex-wrap:nowrap;padding:6px;background:#f7f2fb;border:1px solid #e7dcef;border-radius:18px}nav a{white-space:nowrap;padding:8px 12px}.tools{flex-wrap:wrap}.tools input{width:100%}.heroGrid,.grid2,.schedule{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.books{grid-template-columns:repeat(2,1fr)}.activities{grid-template-columns:1fr}.heroImg{height:240px}nav{gap:9px}nav a{font-size:11px}.stats{gap:6px}.stat{padding:9px}.stat b{font-size:16px}.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}}
 .logo-img{width:58px;height:58px;object-fit:contain;display:block;background:transparent;border-radius:0}\n</style></head><body>
 <div class="top"><div class="wrap">Perpustakaan SMA Negeri 1 Banjarangkan</div></div>
-<header><div class="wrap nav"><div class="brand"><img class="logo-img" src="logo.png" alt="Logo SMA Negeri 1 Banjarangkan"><div class="brand-name">Graha Sastra<br>Kertha Langhu</div></div><nav><a href="#beranda">Beranda</a><a href="#profil">Profil</a><a href="#layanan">Layanan</a><a href="#katalog">Katalog</a><a href="#kegiatan">Kegiatan</a><a href="#karya">Karya pemustaka</a><a href="#info">Informasi</a></nav></div></header>
+<header><div class="wrap nav"><div class="brand"><img class="logo-img" src="logo.png" alt="Logo SMA Negeri 1 Banjarangkan"><div class="brand-name">Graha Sastra<br>Kertha Langhu</div></div><nav><a href="#beranda">Beranda</a><a href="#profil">Profil</a><a href="#layanan">Layanan</a><a href="#katalog">Katalog</a><a href="#favorit">Favorit</a><a href="#populer">Populer</a><a href="#kegiatan">Kegiatan</a><a href="#karya">Karya pemustaka</a><a href="#info">Informasi</a></nav></div></header>
 <main>
 <section class="hero" id="beranda"><div class="wrap heroGrid"><div><span class="pill">RUANG TUMBUH PENGETAHUAN</span><h1>Temukan ilmu,<br><span style="color:#9876b8">luaskan dunia.</span></h1><p>Selamat datang di website Perpustakaan Graha Sastra Kertha Langhu. Jelajahi koleksi bacaan, kenali layanan, dan temukan kegiatan literasi sekolah.</p><a class="btn" href="#katalog">Jelajahi katalog ↗</a><a class="btn alt" href="#profil">Profil perpustakaan</a><div class="notice-hours" style="margin-top:16px;padding:13px 16px;background:#fff;border:1px solid #e6dcef;border-radius:14px;color:#4b2b78;font-size:14px"><b>Jam Operasional:</b> Senin–Sabtu, 07:00–14:00 <span style="color:#756d80">| Minggu: Libur</span></div><div class="stats"><div class="stat"><b id="totalBooks">—</b><small>Koleksi buku</small></div><div class="stat"><b>07:00–14:00</b><small>Jam operasional</small></div><div class="stat"><b>Literasi</b><small>Ruang berkembang</small></div></div></div><img class="heroImg" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1100&q=85" alt="Ilustrasi perpustakaan"></div></section>
 <section id="profil"><div class="wrap"><div class="head"><small>TENTANG KAMI</small><h2>Lebih dekat dengan perpustakaan</h2><p>Informasi profil resmi dapat dilengkapi bersama pengelola perpustakaan.</p></div><div class="grid2"><div class="card"><h3>Profil singkat</h3><p>Graha Sastra Kertha Langhu merupakan ruang belajar yang menyediakan sumber informasi dan bahan bacaan untuk mendukung budaya literasi warga sekolah.</p></div><div class="card vision"><h3>Visi perpustakaan</h3><p>Menjadi pusat sumber belajar yang nyaman, informatif, dan mendorong tumbuhnya budaya literasi.</p><p style="margin-top:10px;font-size:10px">Visi di atas hanya contoh, bukan visi resmi.</p></div></div></div></section>
@@ -39,6 +47,8 @@ footer{background:#241536;color:white;padding:34px 0}footer p{font-size:12px;col
 <section id="info" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>KUNJUNGI KAMI</small><h2>Informasi perpustakaan</h2><p>Informasi kunjungan perpustakaan.</p></div><div class="schedule"><div class="card"><h3>Jam operasional</h3><div class="row"><span>Senin–Sabtu</span><span>07.00–14.00</span></div><div class="row"><span>Minggu</span><span>Libur</span></div></div><div class="card"><h3>Kontak & lokasi</h3><div class="row"><span>Lokasi</span><span>Banjarangkan, Bali</span></div><div class="row"><span>Email</span><span>email-contoh</span></div><div class="row"><span>Pengelola</span><span>Petugas perpustakaan</span></div></div></div></div></section>
 
 </main><footer><div class="wrap foot"><div><b>GRAHA SASTRA KERTHA LANGHU</b><p>Website informasi dan katalog Perpustakaan SMA Negeri 1 Banjarangkan.</p></div><div><b>Navigasi</b><p><a href="#profil">Profil</a><br><a href="#katalog">Katalog</a><br><a href="#kegiatan">Kegiatan</a></p></div><div><b>Informasi</b><p><a href="#info">Jam layanan</a><br><a href="#beranda">Kembali ke atas</a></p></div></div></footer>
+
+<div class="modal" id="bookModal" aria-hidden="true"><div class="modalBox" role="dialog" aria-modal="true" aria-labelledby="detailTitle"><button class="modalClose" id="closeBookModal" aria-label="Tutup">×</button><div id="bookDetail"></div></div></div>
 <div id="photoLightbox" aria-hidden="true"><button type="button" id="closePhoto" aria-label="Tutup">×</button><img id="lightboxImage" alt="Foto diperbesar"><div class="hint">Ketuk di luar foto atau tombol × untuk menutup</div></div>
 <script type="module">
 import * as Sentry from "https://cdn.jsdelivr.net/npm/@sentry/browser@8/+esm";
@@ -79,17 +89,57 @@ document.addEventListener('click',e=>{
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
 
+let ratingSummary = {};
+let currentBooks = [];
+let allBooksCache = [];
+const FAVORITES_KEY = 'gskl_favorite_book_ids_v1';
+function getFavorites(){try{return JSON.parse(localStorage.getItem(FAVORITES_KEY)||'[]').map(String)}catch{return []}}
+function saveFavorites(ids){localStorage.setItem(FAVORITES_KEY,JSON.stringify(ids))}
+function stars(value){const n=Math.round(Number(value)||0);return '★'.repeat(n)+'☆'.repeat(5-n)}
+function bookCard(book, compact=false){
+  const id=String(book.id), summary=ratingSummary[id]||{count:0,avg:0};
+  const fav=getFavorites().includes(id);
+  return `<article class="book" data-book-open="${escapeHTML(id)}"><div class="cover">${escapeHTML(book.title)}</div><div class="bookInfo"><b>${escapeHTML(book.title)}</b><small>${escapeHTML(book.author||"Pengarang belum dicantumkan")}</small><span class="tag">${escapeHTML(book.category||"Belum dikategorikan")}</span>${book.book_code?`<small>Kode: ${escapeHTML(book.book_code)}</small>`:''}<div class="mutedSmall"><span class="stars">${summary.count?stars(summary.avg):'☆☆☆☆☆'}</span> ${summary.count?summary.avg.toFixed(1)+' · '+summary.count+' ulasan':'Belum ada ulasan'}</div><div class="bookActions"><button class="miniBtn primary" data-book-open="${escapeHTML(id)}">Detail</button><button class="miniBtn" data-favorite="${escapeHTML(id)}">${fav?'♥ Tersimpan':'♡ Favorit'}</button></div></div></article>`;
+}
 function renderBooks(rows) {
-  booksEl.innerHTML = rows.length ? rows.map(book => `
-    <article class="book">
-      <div class="cover">${escapeHTML(book.title)}</div>
-      <div class="bookInfo">
-        <b>${escapeHTML(book.title)}</b>
-        <small>${escapeHTML(book.author || "Pengarang belum dicantumkan")}</small>
-        <span class="tag">${escapeHTML(book.category || "Belum dikategorikan")}</span>
-        ${book.book_code ? `<small>Kode: ${escapeHTML(book.book_code)}</small>` : ""}
-      </div>
-    </article>`).join("") : '<div class="card">Belum ada buku yang cocok dengan pencarian ini.</div>';
+  currentBooks = rows || [];
+  booksEl.innerHTML = rows.length ? rows.map(b=>bookCard(b)).join("") : '<div class="card">Belum ada buku yang cocok dengan pencarian ini.</div>';
+  renderFavoriteBooks();
+  renderPopularBooks();
+}
+function renderFavoriteBooks(){
+  const box=document.getElementById('favoriteBooks'); if(!box)return;
+  const ids=getFavorites();
+  const found=ids.map(id=>allBooksCache.find(b=>String(b.id)===id)||currentBooks.find(b=>String(b.id)===id)).filter(Boolean);
+  box.innerHTML=found.length?found.map(b=>bookCard(b,true)).join(''):'<div class="card">Belum ada buku favorit pada halaman katalog ini. Cari buku lalu tekan ♡ Favorit. Favorit tersimpan di perangkat ini.</div>';
+}
+function renderPopularBooks(){
+  const box=document.getElementById('popularBooks'); if(!box)return;
+  const ranked=[...(allBooksCache.length?allBooksCache:currentBooks)].sort((a,b)=>{const x=ratingSummary[String(a.id)]||{count:0,avg:0};const y=ratingSummary[String(b.id)]||{count:0,avg:0};return y.count-x.count||y.avg-x.avg;}).filter(b=>(ratingSummary[String(b.id)]||{}).count);
+  box.innerHTML=ranked.length?ranked.slice(0,5).map(b=>bookCard(b,true)).join(''):'<div class="card">Belum ada data ulasan untuk menentukan buku populer. Buku akan muncul setelah pembaca memberikan rating.</div>';
+}
+function openBook(id){
+  const b=allBooksCache.find(x=>String(x.id)===String(id))||currentBooks.find(x=>String(x.id)===String(id));
+  if(!b){return}
+  const summary=ratingSummary[String(b.id)]||{count:0,avg:0};
+  const fav=getFavorites().includes(String(b.id));
+  document.getElementById('bookDetail').innerHTML=`<span class="pill">DETAIL KOLEKSI</span><div class="detailCover">${escapeHTML(b.title)}</div><h2 id="detailTitle">${escapeHTML(b.title)}</h2><p><b>Pengarang:</b> ${escapeHTML(b.author||'Belum dicantumkan')}</p><p><b>Kategori:</b> ${escapeHTML(b.category||'Belum dikategorikan')}</p><p><b>Kode buku:</b> ${escapeHTML(b.book_code||'Belum tersedia')}</p><p><b>Rating:</b> <span class="stars">${summary.count?stars(summary.avg):'☆☆☆☆☆'}</span> ${summary.count?summary.avg.toFixed(1)+' dari 5 ('+summary.count+' ulasan)':'Belum ada ulasan'}</p><button class="btn" data-favorite="${escapeHTML(String(b.id))}">${fav?'♥ Hapus dari favorit':'♡ Simpan ke favorit'}</button><hr style="border:0;border-top:1px solid #eee;margin:20px 0"><h3>Beri ulasan buku</h3><form class="reviewForm" id="reviewForm"><label>Nama (opsional)</label><input id="reviewerName" maxlength="60" placeholder="Nama atau inisial"><label>Penilaian</label><select id="reviewRating" required><option value="5">5 - Sangat bagus</option><option value="4">4 - Bagus</option><option value="3">3 - Cukup</option><option value="2">2 - Kurang</option><option value="1">1 - Kurang sekali</option></select><label>Ulasan</label><textarea id="reviewText" maxlength="1000" required placeholder="Bagaimana pendapatmu tentang buku ini?"></textarea><button class="btn" type="submit">Kirim ulasan</button><p class="mutedSmall" id="reviewMessage">Ulasan akan ditampilkan setelah berhasil disimpan.</p></form><h3>Ulasan pembaca</h3><div id="bookReviewList" class="reviewList">Memuat ulasan...</div>`;
+  const modal=document.getElementById('bookModal');modal.classList.add('open');modal.setAttribute('aria-hidden','false');
+  loadBookReviews(b.id);
+  document.getElementById('reviewForm').onsubmit=async e=>{e.preventDefault();const message=document.getElementById('reviewMessage');const review=document.getElementById('reviewText').value.trim();if(!review){message.textContent='Ulasan tidak boleh kosong.';return}message.textContent='Mengirim ulasan...';const {error}=await supabase.from('book_reviews').insert({book_id:String(b.id),reviewer_name:document.getElementById('reviewerName').value.trim()||'Anonim',rating:Number(document.getElementById('reviewRating').value),review});if(error){console.error(error);message.textContent='Ulasan belum tersimpan. Pastikan skrip SQL fitur ulasan sudah dijalankan.';return}document.getElementById('reviewText').value='';message.textContent='Terima kasih! Ulasan berhasil dikirim.';await loadRatingSummary();await loadBookReviews(b.id);openBook(b.id);};
+}
+async function loadBookReviews(bookId){
+  const box=document.getElementById('bookReviewList');if(!box)return;
+  const {data,error}=await supabase.from('book_reviews').select('reviewer_name,rating,review,created_at').eq('book_id',String(bookId)).order('created_at',{ascending:false}).limit(30);
+  if(error){box.textContent='Ulasan belum tersedia. Pastikan tabel ulasan sudah dibuat.';return}
+  box.innerHTML=data.length?data.map(r=>`<div class="reviewItem"><b>${escapeHTML(r.reviewer_name||'Anonim')}</b> <span class="stars">${stars(r.rating)}</span><p style="margin:5px 0">${escapeHTML(r.review)}</p><small class="mutedSmall">${r.created_at?new Date(r.created_at).toLocaleDateString('id-ID'):''}</small></div>`).join(''):'<p class="mutedSmall">Belum ada ulasan. Jadilah pembaca pertama yang memberi ulasan.</p>';
+}
+async function loadRatingSummary(){
+  const {data,error}=await supabase.from('book_reviews').select('book_id,rating');
+  if(error){console.warn('Rating belum aktif:',error);ratingSummary={};return}
+  ratingSummary={};
+  (data||[]).forEach(r=>{const id=String(r.book_id);if(!ratingSummary[id])ratingSummary[id]={count:0,sum:0,avg:0};ratingSummary[id].count++;ratingSummary[id].sum+=Number(r.rating)||0;});
+  Object.values(ratingSummary).forEach(x=>x.avg=x.count?x.sum/x.count:0);
 }
 function renderPagination() {
   if (!totalPages) { paginationEl.innerHTML = ""; return; }
@@ -110,6 +160,7 @@ async function loadBooks() {
   const from = currentPage * PAGE_SIZE;
   const {data,error,count} = await query.order("title",{ascending:true}).range(from,from+PAGE_SIZE-1);
   if (error) { status("Katalog belum dapat dimuat. Periksa koneksi dan pengaturan database."); booksEl.innerHTML=""; console.error(error); return; }
+  await loadRatingSummary();
   totalPages = Math.ceil((count || 0)/PAGE_SIZE);
   if (currentPage >= totalPages && totalPages > 0) { currentPage=totalPages-1; return loadBooks(); }
   totalEl.textContent = (count || 0).toLocaleString("id-ID");
@@ -117,6 +168,18 @@ async function loadBooks() {
   renderBooks(data); renderPagination();
 }
 
+async function loadAllBooksForFeatures(){
+  allBooksCache=[];let from=0,batch=1000;
+  while(true){
+    const {data,error}=await supabase.from('books').select('id,book_code,title,author,category').order('title',{ascending:true}).range(from,from+batch-1);
+    if(error){console.warn('Koleksi lengkap belum dimuat:',error);break}
+    allBooksCache.push(...(data||[]));
+    if(!data||data.length<batch)break;
+    from+=batch;
+    if(from>=20000)break;
+  }
+  renderFavoriteBooks();renderPopularBooks();
+}
 async function loadPublishedGallery(){
   const activityBox=document.getElementById('activityGallery');
   const worksBox=document.getElementById('worksGallery');
@@ -135,10 +198,22 @@ async function loadPublishedGallery(){
   } else console.warn('Galeri karya:',w.error);
 }
 
+
+document.addEventListener('click',e=>{
+  const fav=e.target.closest('[data-favorite]');
+  if(fav){e.preventDefault();const id=String(fav.dataset.favorite),ids=getFavorites();saveFavorites(ids.includes(id)?ids.filter(x=>x!==id):[...ids,id]);renderBooks(currentBooks);const modal=document.getElementById('bookModal');if(modal.classList.contains('open'))openBook(id);return;}
+  const open=e.target.closest('[data-book-open]');
+  if(open){e.preventDefault();openBook(open.dataset.bookOpen);return;}
+});
+function closeBookModal(){const m=document.getElementById('bookModal');m.classList.remove('open');m.setAttribute('aria-hidden','true');}
+document.getElementById('closeBookModal').onclick=closeBookModal;
+document.getElementById('bookModal').addEventListener('click',e=>{if(e.target.id==='bookModal')closeBookModal()});
+
 if (SUPABASE_URL.startsWith("https://") && SUPABASE_ANON_KEY.length > 20) {
   supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   qEl.addEventListener("input", () => { clearTimeout(searchTimer); searchTimer=setTimeout(()=>{currentPage=0;loadBooks();},300); });
   catEl.addEventListener("change", () => { currentPage=0;loadBooks(); });
+  await loadAllBooksForFeatures();
   await loadBooks();
   await loadPublishedGallery();
 } else {
