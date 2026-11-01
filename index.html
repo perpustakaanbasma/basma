@@ -41,7 +41,15 @@ footer{background:#241536;color:white;padding:34px 0}footer p{font-size:12px;col
 </main><footer><div class="wrap foot"><div><b>GRAHA SASTRA KERTHA LANGHU</b><p>Website informasi dan katalog Perpustakaan SMA Negeri 1 Banjarangkan.</p></div><div><b>Navigasi</b><p><a href="#profil">Profil</a><br><a href="#katalog">Katalog</a><br><a href="#kegiatan">Kegiatan</a></p></div><div><b>Informasi</b><p><a href="#info">Jam layanan</a><br><a href="#beranda">Kembali ke atas</a></p></div></div></footer>
 <div id="photoLightbox" aria-hidden="true"><button type="button" id="closePhoto" aria-label="Tutup">×</button><img id="lightboxImage" alt="Foto diperbesar"><div class="hint">Ketuk di luar foto atau tombol × untuk menutup</div></div>
 <script type="module">
+import * as Sentry from "https://cdn.jsdelivr.net/npm/@sentry/browser@8/+esm";
 import { createClient } from "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm";
+
+Sentry.init({
+  dsn: "https://a71633ed6e098ee3d8945a0abe823e6e@o4512354676899840.ingest.us.sentry.io/4512354697216000",
+  sendDefaultPii: false,
+  environment: location.hostname === "localhost" ? "development" : "production"
+});
+
 
 /* ISI DUA NILAI INI DARI PROJECT SUPABASE BARU MILIK PERPUSTAKAAN.
    Gunakan Project URL dan anon/public key. JANGAN tempel service_role key. */

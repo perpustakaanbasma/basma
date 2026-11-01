@@ -15,7 +15,14 @@
 </section><p><a class="linkbtn" href="/">Kembali ke website publik</a></p>
 </main>
 <script type="module">
+import * as Sentry from "https://cdn.jsdelivr.net/npm/@sentry/browser@8/+esm";
 import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm';
+Sentry.init({
+  dsn: "https://a71633ed6e098ee3d8945a0abe823e6e@o4512354676899840.ingest.us.sentry.io/4512354697216000",
+  sendDefaultPii: false,
+  environment: location.hostname === "localhost" ? "development" : "production"
+});
+
 const URL='https://pupruiplfpfplymobnjp.supabase.co';const KEY='sb_publishable_mPDOEnYiHs9NmnTnlDvm0A_bQY0NAJ1';const db=createClient(URL,KEY);const $=id=>document.getElementById(id);let user=null;
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 function msg(id,t){$(id).textContent=t}
