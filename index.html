@@ -33,13 +33,94 @@ footer{background:#241536;color:white;padding:34px 0}footer p{font-size:12px;col
 @media(max-width:760px){.featureBooks{grid-template-columns:repeat(2,1fr)}}
 
 @media(max-width:760px){.nav{align-items:flex-start;flex-direction:column;padding:10px 0}nav{width:100%;overflow-x:auto;flex-wrap:nowrap;padding:6px;background:#f7f2fb;border:1px solid #e7dcef;border-radius:18px}nav a{white-space:nowrap;padding:8px 12px}.tools{flex-wrap:wrap}.tools input{width:100%}.heroGrid,.grid2,.schedule{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.books{grid-template-columns:repeat(2,1fr)}.activities{grid-template-columns:1fr}.heroImg{height:240px}nav{gap:9px}nav a{font-size:11px}.stats{gap:6px}.stat{padding:9px}.stat b{font-size:16px}.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}}
-.logo-img{width:58px;height:58px;object-fit:contain;display:block;background:transparent;border-radius:0}\n</style></head><body>
+.logo-img{width:58px;height:58px;object-fit:contain;display:block;background:transparent;border-radius:0}\n
+.profileFacts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
+.profileFact{background:#fff;border:1px solid #e9e1f0;border-radius:14px;padding:15px}
+.profileFact small{display:block;color:var(--muted);font-size:11px}
+.profileFact b{display:block;color:var(--d);margin-top:4px}
+.missionList{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+.missionItem{background:#fff;border:1px solid #e9e1f0;border-radius:14px;padding:15px}
+.missionItem b{color:var(--d);display:block;margin-bottom:5px}
+.missionItem p{margin:0;color:var(--muted);font-size:13px}
+.programList{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.programItem{background:#fff;border:1px solid #e9e1f0;border-radius:12px;padding:13px;font-size:13px;color:var(--ink)}
+.orgGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.orgItem{background:#fff;border:1px solid #e9e1f0;border-radius:13px;padding:14px}
+.orgItem b{display:block;color:var(--d);font-size:13px}
+.orgItem small{color:var(--muted)}
+@media(max-width:760px){.profileFacts,.missionList,.programList,.orgGrid{grid-template-columns:1fr 1fr}}
+@media(max-width:460px){.profileFacts,.missionList,.programList,.orgGrid{grid-template-columns:1fr}}
+</style></head><body>
 <div class="top"><div class="wrap">Perpustakaan SMA Negeri 1 Banjarangkan</div></div>
 <header><div class="wrap nav"><div class="brand"><img class="logo-img" src="logo.png" alt="Logo SMA Negeri 1 Banjarangkan"><div class="brand-name">Graha Sastra<br>Kertha Langhu</div></div><nav><a href="#beranda">Beranda</a><a href="#profil">Profil</a><a href="#layanan">Layanan</a><a href="#katalog">Katalog</a><a href="#favorit">Favorit</a><a href="#populer">Populer</a><a href="#kegiatan">Kegiatan</a><a href="#karya">Karya pemustaka</a><a href="#info">Informasi</a></nav></div></header>
 <main>
 <section class="hero" id="beranda"><div class="wrap heroGrid"><div><span class="pill">RUANG TUMBUH PENGETAHUAN</span><h1>Temukan ilmu,<br><span style="color:#9876b8">luaskan dunia.</span></h1><p>Selamat datang di website Perpustakaan Graha Sastra Kertha Langhu. Jelajahi koleksi bacaan, kenali layanan, dan temukan kegiatan literasi sekolah.</p><a class="btn" href="#katalog">Jelajahi katalog ↗</a><a class="btn alt" href="#profil">Profil perpustakaan</a><div class="notice-hours" style="margin-top:16px;padding:13px 16px;background:#fff;border:1px solid #e6dcef;border-radius:14px;color:#4b2b78;font-size:14px"><b>Jam Operasional:</b> Senin–Sabtu, 07:00–14:00 <span style="color:#756d80">| Minggu: Libur</span></div><div class="stats"><div class="stat"><b id="totalBooks">—</b><small>Koleksi buku</small></div><div class="stat"><b>07:00–14:00</b><small>Jam operasional</small></div><div class="stat"><b>Literasi</b><small>Ruang berkembang</small></div></div></div><img class="heroImg" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1100&q=85" alt="Ilustrasi perpustakaan"></div></section>
-<section id="profil"><div class="wrap"><div class="head"><small>TENTANG KAMI</small><h2>Lebih dekat dengan perpustakaan</h2><p>Informasi profil resmi dapat dilengkapi bersama pengelola perpustakaan.</p></div><div class="grid2"><div class="card"><h3>Profil singkat</h3><p>Graha Sastra Kertha Langhu merupakan ruang belajar yang menyediakan sumber informasi dan bahan bacaan untuk mendukung budaya literasi warga sekolah.</p></div><div class="card vision"><h3>Visi perpustakaan</h3><p>Menjadi pusat sumber belajar yang nyaman, informatif, dan mendorong tumbuhnya budaya literasi.</p><p style="margin-top:10px;font-size:10px">Visi di atas hanya contoh, bukan visi resmi.</p></div></div></div></section>
-<section id="layanan" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>FASILITAS</small><h2>Layanan perpustakaan</h2><p>Informasi layanan perpustakaan.</p></div><div class="services"><div class="service">📚<b>Baca di tempat</b><p>Ruang membaca dan belajar.</p></div><div class="service">🔎<b>Pencarian koleksi</b><p>Telusuri buku berdasarkan judul dan kategori.</p></div><div class="service">💡<b>Sumber informasi</b><p>Referensi untuk mendukung pembelajaran.</p></div><div class="service">✍️<b>Kegiatan literasi</b><p>Wadah berbagi karya dan minat baca.</p></div></div></div></section>
+<section id="profil"><div class="wrap">
+<div class="head"><small>IDENTITAS &amp; SEJARAH</small><h2>Profil perpustakaan</h2><p>Mengenal Perpustakaan SMA Negeri 1 Banjarangkan.</p></div>
+<div class="grid2">
+<div class="card"><h3>Graha Sastra Kertha Langhu</h3><p>Perpustakaan SMA Negeri 1 Banjarangkan berdiri pada <b>25 Juli 1992</b>. Perpustakaan berada di gedung barat, sebelah barat Laboratorium Biologi dan sebelah utara ruang BK.</p><p style="margin-top:12px"><b>Motto:</b> Vidya Granthalaya Jnanasya Nivasah</p></div>
+<div class="card vision"><h3>Visi perpustakaan</h3><p>Memberdayakan potensi perpustakaan sekolah, berbudaya literasi dan unggul dalam prestasi.</p></div>
+</div>
+<div class="profileFacts">
+<div class="profileFact"><small>Alamat</small><b>Desa Tusan, Banjarangkan, Kabupaten Klungkung, Bali</b></div>
+<div class="profileFact"><small>Luas bangunan</small><b>135 m² (15 m × 9 m)</b></div>
+<div class="profileFact"><small>Sasaran layanan</small><b>Murid, pendidik, tenaga kependidikan, dan warga sekolah</b></div>
+</div>
+<div class="head" style="margin-top:35px"><small>ARAH PENGEMBANGAN</small><h2>Misi perpustakaan</h2><p>Enam misi sebagaimana tercantum dalam profil perpustakaan.</p></div>
+<div class="missionList">
+<div class="missionItem"><b>1. Mengembangkan koleksi yang beragam dan relevan</b><p>Memperluas dan memperkaya koleksi agar warga sekolah memiliki akses ke sumber pengetahuan yang mendukung pembelajaran dan penelitian.</p></div>
+<div class="missionItem"><b>2. Mendorong budaya literasi</b><p>Mengembangkan minat membaca dan keterampilan literasi melalui kegiatan yang merangsang pemikiran kritis, kreativitas, dan diskusi.</p></div>
+<div class="missionItem"><b>3. Memfasilitasi pembelajaran kolaboratif</b><p>Menciptakan lingkungan untuk kelompok studi, berbagi pengetahuan, dan proyek penelitian bagi komunitas sekolah.</p></div>
+<div class="missionItem"><b>4. Mengintegrasikan teknologi</b><p>Memanfaatkan teknologi untuk meningkatkan akses dan pemanfaatan perpustakaan, termasuk sistem manajemen online dan sumber daya digital.</p></div>
+<div class="missionItem"><b>5. Mengukir prestasi unggul</b><p>Mendukung pencapaian akademik dengan menyediakan sumber daya dan dukungan bagi peserta didik.</p></div>
+<div class="missionItem"><b>6. Menggalang dukungan komunitas</b><p>Memperluas dukungan dan partisipasi komunitas sekolah, orang tua, serta mitra eksternal.</p></div>
+</div>
+<div class="head" style="margin-top:35px"><small>FASILITAS</small><h2>Ruang dan fasilitas</h2><p>Fasilitas yang tercantum dalam profil perpustakaan.</p></div>
+<div class="services">
+<div class="service">❄️<b>Pendingin ruangan</b><p>AC dan kipas angin.</p></div>
+<div class="service">💻<b>Komputer</b><p>2 unit komputer untuk pengunjung, serta 1 unit komputer dan printer untuk petugas.</p></div>
+<div class="service">📽️<b>Perangkat presentasi</b><p>Tape recorder, LCD, dan projektor.</p></div>
+<div class="service">📖<b>Ruang baca</b><p>Meja panjang, kursi, meja study carrel, area belajar mandiri, dan lesehan.</p></div>
+<div class="service">📚<b>Rak koleksi</b><p>Rak koleksi buku dan rak referensi.</p></div>
+</div>
+</div></section>
+<section id="layanan" style="background:#f8f5fb"><div class="wrap">
+<div class="head"><small>LAYANAN &amp; INOVASI</small><h2>Layanan perpustakaan</h2><p>Layanan dan strategi inovasi yang tercantum dalam profil perpustakaan.</p></div>
+<div class="services">
+<div class="service">📚<b>Layanan perpustakaan</b><p>Layanan yang ramah, mudah, menarik, dan menyenangkan.</p></div>
+<div class="service">📖<b>Wajib baca</b><p>Program membaca di perpustakaan secara terjadwal.</p></div>
+<div class="service">🗣️<b>Bedah buku &amp; temu tokoh</b><p>Ruang diskusi dan pertemuan untuk memperkaya wawasan.</p></div>
+<div class="service">🎁<b>Wakaf buku</b><p>Mendorong warga sekolah menyumbangkan buku berkualitas.</p></div>
+<div class="service">🏅<b>Reward literasi</b><p>Sertifikat untuk pengunjung, peminjam, dan penyumbang buku teraktif.</p></div>
+<div class="service">✍️<b>Lomba literasi</b><p>Berbagai lomba untuk menumbuhkan minat dan kreativitas.</p></div>
+<div class="service">🖼️<b>Kumpulan karya</b><p>Wadah karya siswa dan guru.</p></div>
+<div class="service">🤝<b>Kerja sama</b><p>Kolaborasi dengan perpustakaan lain.</p></div>
+<div class="service">💻<b>Otomatisasi layanan</b><p>Pemanfaatan aplikasi teknologi dalam administrasi perpustakaan.</p></div>
+</div>
+<div class="head" style="margin-top:35px"><small>PROGRAM KERJA</small><h2>Pengembangan perpustakaan</h2></div>
+<div class="grid2">
+<div class="card"><h3>Program jangka pendek</h3><div class="programList">
+<div class="programItem">Pelayanan ramah, mudah, menarik, dan menyenangkan.</div>
+<div class="programItem">Menuntaskan administrasi perpustakaan melalui program PAS.</div>
+<div class="programItem">Melengkapi fasilitas sesuai kebutuhan.</div>
+<div class="programItem">Merawat dan memperbaiki bahan pustaka.</div>
+<div class="programItem">Menerbitkan administrasi seperti kartu buku, katalog, dan kartu anggota.</div>
+<div class="programItem">Penerbitan Surat Tanda Bebas Perpustakaan.</div>
+<div class="programItem">Meningkatkan budaya gemar membaca.</div>
+<div class="programItem">Mengikuti lomba perpustakaan dan menuju akreditasi.</div>
+</div></div>
+<div class="card"><h3>Program jangka panjang</h3><div class="programList">
+<div class="programItem">Mewujudkan ruang perpustakaan yang lebih luas dan nyaman.</div>
+<div class="programItem">Menambah kuantitas, kualitas, dan variasi koleksi.</div>
+<div class="programItem">Mengembangkan layanan otomasi berbasis IT.</div>
+<div class="programItem">Merealisasikan kegiatan wajib baca rutin.</div>
+<div class="programItem">Mendorong wakaf buku berkualitas.</div>
+<div class="programItem">Memanfaatkan sudut sekolah sebagai taman bacaan.</div>
+<div class="programItem">Mewujudkan perpustakaan mini di setiap kelas.</div>
+<div class="programItem">Mengadakan pameran buku dan seni setiap semester.</div>
+</div></div>
+</div>
+</div></section>
 <section class="catalog" id="katalog"><div class="wrap"><div class="head"><small>JELAJAHI KOLEKSI</small><h2>Katalog buku</h2><p>Telusuri koleksi perpustakaan melalui pencarian, kategori, dan halaman katalog.</p></div><div class="tools"><input id="q" placeholder="Cari judul, penulis, atau kode buku..."><select id="cat"><option value="">Semua kategori</option><option>Fiksi & Novel</option><option>Bahasa Asing</option><option>Pendidikan & Akademik</option><option>Keterampilan & Panduan Praktis</option><option>Pengembangan Diri & Psikologi</option><option>Komik & Manga</option></select></div><div id="catalogStatus" class="card" style="margin-bottom:14px">Menghubungkan katalog...</div><div class="books" id="books"></div><div id="pagination" style="display:flex;justify-content:center;align-items:center;gap:12px;margin-top:22px"></div></div></section>
 
 <section id="favorit" class="favSection"><div class="wrap"><div class="head"><small>KOLEKSI PILIHANMU</small><h2>Buku favorit</h2><p>Buku yang kamu simpan dari katalog akan muncul di sini pada perangkat ini.</p></div><div class="featureBooks" id="favoriteBooks"><div class="card">Memuat buku favorit...</div></div></div></section>
@@ -47,7 +128,17 @@ footer{background:#241536;color:white;padding:34px 0}footer p{font-size:12px;col
 <section id="kegiatan"><div class="wrap"><div class="head"><small>AKTIVITAS LITERASI</small><h2>Kegiatan perpustakaan</h2><p>Dokumentasi kegiatan literasi perpustakaan.</p></div><div class="activities">
 <div id="activityGallery" class="activities"><div class="activity"><img src="kegiatan-1.jpg" alt="Dokumentasi kegiatan"><div><b>Dokumentasi kegiatan</b><p>Galeri kegiatan perpustakaan.</p></div></div><div class="activity"><img src="kegiatan-2.jpg" alt="Dokumentasi kegiatan"><div><b>Galeri kegiatan</b><p>Galeri kegiatan perpustakaan.</p></div></div></div></div></div></section>
 <section id="karya" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>KREATIVITAS SISWA</small><h2>Karya pemustaka</h2><p>Ruang apresiasi karya dan kreativitas warga sekolah.</p></div><div id="worksGallery" class="activities"><div class="card">Karya pemustaka yang telah diterbitkan akan tampil di sini.</div></div></div></section>
-<section id="info" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>KUNJUNGI KAMI</small><h2>Informasi perpustakaan</h2><p>Informasi kunjungan perpustakaan.</p></div><div class="schedule"><div class="card"><h3>Jam operasional</h3><div class="row"><span>Senin–Sabtu</span><span>07.00–14.00</span></div><div class="row"><span>Minggu</span><span>Libur</span></div></div><div class="card"><h3>Kontak & lokasi</h3><div class="row"><span>Lokasi</span><span>Banjarangkan, Bali</span></div><div class="row"><span>Email</span><span>email-contoh</span></div><div class="row"><span>Pengelola</span><span>Petugas perpustakaan</span></div></div></div></div></section>
+<section id="info" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>KUNJUNGI KAMI</small><h2>Informasi perpustakaan</h2><p>Informasi kunjungan perpustakaan.</p></div><div class="schedule"><div class="card"><h3>Jam operasional</h3><div class="row"><span>Senin–Sabtu</span><span>07.00–14.00</span></div><div class="row"><span>Minggu</span><span>Libur</span></div></div><div class="card"><h3>Kontak & lokasi</h3><div class="row"><span>Alamat</span><span>Desa Tusan, Banjarangkan</span></div><div class="row"><span>Gedung</span><span>Gedung barat</span></div><div class="row"><span>Kepala perpustakaan</span><span>Ida Ayu Dewi, S.Pd., M.Pd.</span></div></div></div></div>
+<div class="head" style="margin-top:30px"><small>PENGELOLA</small><h2>Struktur pengelola</h2><p>Nama dan jabatan berdasarkan dokumen profil perpustakaan.</p></div>
+<div class="orgGrid">
+<div class="orgItem"><b>Penanggung jawab</b><small>I Dewa Gede Anom, S.Pd.</small></div>
+<div class="orgItem"><b>Kepala perpustakaan</b><small>Ida Ayu Dewi, S.Pd., M.Pd.</small></div>
+<div class="orgItem"><b>Layanan pemustaka</b><small>Ni Ketut Satya Widiarni, S.E.</small></div>
+<div class="orgItem"><b>Layanan IT</b><small>I Wayan Bayu Permana, S.Pd.</small></div>
+<div class="orgItem"><b>Petugas</b><small>Kadek Ningsih, S.Pd.</small></div>
+<div class="orgItem"><b>Layanan teknis</b><small>Ni Wayan Saputriani</small></div>
+</div>
+</section>
 
 </main><footer><div class="wrap foot"><div><b>GRAHA SASTRA KERTHA LANGHU</b><p>Website informasi dan katalog Perpustakaan SMA Negeri 1 Banjarangkan.</p></div><div><b>Navigasi</b><p><a href="#profil">Profil</a><br><a href="#katalog">Katalog</a><br><a href="#kegiatan">Kegiatan</a></p></div><div><b>Informasi</b><p><a href="#info">Jam layanan</a><br><a href="#beranda">Kembali ke atas</a></p></div></div></footer>
 
