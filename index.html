@@ -24,125 +24,31 @@ section{padding:58px 0}.head{margin-bottom:22px}.head small{color:#8c68ad;font-w
 .schedule{display:grid;grid-template-columns:1fr 1fr;gap:16px}.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #eee8f3;font-size:13px}.row:last-child{border:0}.row span:last-child{font-weight:bold;color:#75529a}
 footer{background:#241536;color:white;padding:34px 0}footer p{font-size:12px;color:#c7b9d4}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px}
 #photoLightbox{position:fixed;inset:0;z-index:1000;background:rgba(20,12,30,.92);display:none;align-items:center;justify-content:center;padding:18px}#photoLightbox.open{display:flex}#photoLightbox img{max-width:96vw;max-height:88vh;width:auto;height:auto;object-fit:contain;border-radius:10px}#photoLightbox button{position:absolute;top:14px;right:14px;border:1px solid #ffffff66;background:#38234f;color:#fff;border-radius:50%;width:42px;height:42px;font-size:24px;cursor:pointer}#photoLightbox .hint{position:absolute;bottom:12px;color:#fff;font-size:12px;text-align:center}
-
-/* Fitur tambahan katalog */
-.book{cursor:pointer;transition:transform .18s,box-shadow .18s}.book:hover{transform:translateY(-3px);box-shadow:0 10px 24px #4b2b7818}
-.bookActions{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}.miniBtn{border:1px solid #dfd3e9;background:#fff;color:#4b2b78;border-radius:8px;padding:7px 9px;font-size:11px;font-weight:bold;cursor:pointer}.miniBtn.primary{background:#4b2b78;color:#fff}
-.favSection,.popularSection{background:#fbf9fd}.featureBooks{display:grid;grid-template-columns:repeat(5,1fr);gap:13px}
-.modal{position:fixed;inset:0;background:#1c1229b8;z-index:1100;display:none;align-items:center;justify-content:center;padding:16px}.modal.open{display:flex}.modalBox{background:#fff;border-radius:18px;width:min(620px,100%);max-height:90vh;overflow:auto;padding:22px;position:relative}.modalClose{position:absolute;right:14px;top:12px;border:0;background:#f1eaf7;color:#3b2458;border-radius:50%;width:36px;height:36px;font-size:22px;cursor:pointer}.modalBox h2,.modalBox h3{color:#2f194f}.detailCover{background:linear-gradient(145deg,#a88bc4,#4b2b78);color:#fff;padding:25px;border-radius:14px;font: bold 23px Georgia;text-align:center;margin:12px 0}.reviewForm input,.reviewForm textarea{width:100%;padding:10px;border:1px solid #ded3e8;border-radius:9px;margin:5px 0 10px;font:inherit}.reviewList{display:grid;gap:9px;margin-top:12px}.reviewItem{background:#f8f5fb;padding:11px;border-radius:10px}.stars{color:#d39a24;letter-spacing:2px}.mutedSmall{font-size:12px;color:#756d80}
-@media(max-width:760px){.featureBooks{grid-template-columns:repeat(2,1fr)}}
-
 @media(max-width:760px){.nav{align-items:flex-start;flex-direction:column;padding:10px 0}nav{width:100%;overflow-x:auto;flex-wrap:nowrap;padding:6px;background:#f7f2fb;border:1px solid #e7dcef;border-radius:18px}nav a{white-space:nowrap;padding:8px 12px}.tools{flex-wrap:wrap}.tools input{width:100%}.heroGrid,.grid2,.schedule{grid-template-columns:1fr}.services{grid-template-columns:repeat(2,1fr)}.books{grid-template-columns:repeat(2,1fr)}.activities{grid-template-columns:1fr}.heroImg{height:240px}nav{gap:9px}nav a{font-size:11px}.stats{gap:6px}.stat{padding:9px}.stat b{font-size:16px}.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}}
 .logo-img{width:58px;height:58px;object-fit:contain;display:block;background:transparent;border-radius:0}\n
-.profileFacts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:16px}
-.profileFact{background:#fff;border:1px solid #e9e1f0;border-radius:14px;padding:15px}
-.profileFact small{display:block;color:var(--muted);font-size:11px}
-.profileFact b{display:block;color:var(--d);margin-top:4px}
-.missionList{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
-.missionItem{background:#fff;border:1px solid #e9e1f0;border-radius:14px;padding:15px}
-.missionItem b{color:var(--d);display:block;margin-bottom:5px}
-.missionItem p{margin:0;color:var(--muted);font-size:13px}
-.programList{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.programItem{background:#fff;border:1px solid #e9e1f0;border-radius:12px;padding:13px;font-size:13px;color:var(--ink)}
-.orgGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-.orgItem{background:#fff;border:1px solid #e9e1f0;border-radius:13px;padding:14px}
-.orgItem b{display:block;color:var(--d);font-size:13px}
-.orgItem small{color:var(--muted)}
-@media(max-width:760px){.profileFacts,.missionList,.programList,.orgGrid{grid-template-columns:1fr 1fr}}
-@media(max-width:460px){.profileFacts,.missionList,.programList,.orgGrid{grid-template-columns:1fr}}
+.digital-section{background:#f5f0f9}.digital-tools{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}.digital-tools input,.digital-tools select{padding:12px;border:1px solid #ded3e8;border-radius:10px;background:#fff;font:inherit}.digital-tools input{flex:1;min-width:180px}.ebook-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.ebook-card{background:#fff;border:1px solid #e8dfef;border-radius:16px;overflow:hidden;display:flex;flex-direction:column;min-width:0}.ebook-cover{width:100%;aspect-ratio:3/4;object-fit:contain;background:#eeeaf2;display:block}.ebook-info{padding:13px;display:flex;flex-direction:column;gap:6px;flex:1}.ebook-info h3{font-size:14px;line-height:1.35;color:var(--d);margin:0}.ebook-meta{font-size:11px;color:var(--muted)}.ebook-category{font-size:10px;color:#805da0;font-weight:bold}.ebook-actions{display:flex;gap:7px;flex-wrap:wrap;margin-top:auto;padding-top:8px}.ebook-actions button{border:0;border-radius:9px;padding:9px 11px;background:var(--p);color:#fff;font-weight:bold;cursor:pointer}.ebook-actions a{font-size:12px;color:var(--d);padding:8px 9px;border:1px solid #ddd1e9;border-radius:9px;text-decoration:none}.reader-modal{position:fixed;inset:0;z-index:1100;background:#1e1528ed;display:none;flex-direction:column;padding:12px}.reader-modal.open{display:flex}.reader-top{display:flex;align-items:center;justify-content:space-between;gap:10px;color:#fff;padding:4px 2px 12px}.reader-top strong{font-size:14px}.reader-top button{background:#fff;color:#321c4b;border:0;border-radius:8px;padding:9px 13px;font-weight:bold}.reader-frame{width:100%;flex:1;border:0;border-radius:10px;background:#fff}.digital-empty{background:#fff;border:1px solid #e8dfef;border-radius:14px;padding:20px;color:var(--muted)}
+@media(max-width:850px){.ebook-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:600px){.ebook-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.ebook-info{padding:10px}.ebook-actions button,.ebook-actions a{font-size:11px;padding:8px}}
 </style></head><body>
 <div class="top"><div class="wrap">Perpustakaan SMA Negeri 1 Banjarangkan</div></div>
-<header><div class="wrap nav"><div class="brand"><img class="logo-img" src="logo.png" alt="Logo SMA Negeri 1 Banjarangkan"><div class="brand-name">Graha Sastra<br>Kertha Langhu</div></div><nav><a href="#beranda">Beranda</a><a href="#profil">Profil</a><a href="#layanan">Layanan</a><a href="#katalog">Katalog</a><a href="#favorit">Favorit</a><a href="#populer">Populer</a><a href="#kegiatan">Kegiatan</a><a href="#karya">Karya pemustaka</a><a href="#info">Informasi</a></nav></div></header>
+<header><div class="wrap nav"><div class="brand"><img class="logo-img" src="logo.png" alt="Logo SMA Negeri 1 Banjarangkan"><div class="brand-name">Graha Sastra<br>Kertha Langhu</div></div><nav><a href="#beranda">Beranda</a><a href="#profil">Profil</a><a href="#layanan">Layanan</a><a href="#katalog">Katalog</a><a href="#perpustakaan-digital">E-Book Digital</a><a href="#kegiatan">Kegiatan</a><a href="#karya">Karya pemustaka</a><a href="#info">Informasi</a></nav></div></header>
 <main>
 <section class="hero" id="beranda"><div class="wrap heroGrid"><div><span class="pill">RUANG TUMBUH PENGETAHUAN</span><h1>Temukan ilmu,<br><span style="color:#9876b8">luaskan dunia.</span></h1><p>Selamat datang di website Perpustakaan Graha Sastra Kertha Langhu. Jelajahi koleksi bacaan, kenali layanan, dan temukan kegiatan literasi sekolah.</p><a class="btn" href="#katalog">Jelajahi katalog ↗</a><a class="btn alt" href="#profil">Profil perpustakaan</a><div class="notice-hours" style="margin-top:16px;padding:13px 16px;background:#fff;border:1px solid #e6dcef;border-radius:14px;color:#4b2b78;font-size:14px"><b>Jam Operasional:</b> Senin–Sabtu, 07:00–14:00 <span style="color:#756d80">| Minggu: Libur</span></div><div class="stats"><div class="stat"><b id="totalBooks">—</b><small>Koleksi buku</small></div><div class="stat"><b>07:00–14:00</b><small>Jam operasional</small></div><div class="stat"><b>Literasi</b><small>Ruang berkembang</small></div></div></div><img class="heroImg" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&w=1100&q=85" alt="Ilustrasi perpustakaan"></div></section>
-<section id="profil"><div class="wrap">
-<div class="head"><small>IDENTITAS &amp; SEJARAH</small><h2>Profil perpustakaan</h2><p>Mengenal Perpustakaan SMA Negeri 1 Banjarangkan.</p></div>
-<div class="grid2">
-<div class="card"><h3>Graha Sastra Kertha Langhu</h3><p>Perpustakaan SMA Negeri 1 Banjarangkan berdiri pada <b>25 Juli 1992</b>. Perpustakaan berada di gedung barat, sebelah barat Laboratorium Biologi dan sebelah utara ruang BK.</p><p style="margin-top:12px"><b>Motto:</b> Vidya Granthalaya Jnanasya Nivasah</p></div>
-<div class="card vision"><h3>Visi perpustakaan</h3><p>Memberdayakan potensi perpustakaan sekolah, berbudaya literasi dan unggul dalam prestasi.</p></div>
-</div>
-<div class="profileFacts">
-<div class="profileFact"><small>Alamat</small><b>Desa Tusan, Banjarangkan, Kabupaten Klungkung, Bali</b></div>
-<div class="profileFact"><small>Luas bangunan</small><b>135 m² (15 m × 9 m)</b></div>
-<div class="profileFact"><small>Sasaran layanan</small><b>Murid, pendidik, tenaga kependidikan, dan warga sekolah</b></div>
-</div>
-<div class="head" style="margin-top:35px"><small>ARAH PENGEMBANGAN</small><h2>Misi perpustakaan</h2><p>Enam misi sebagaimana tercantum dalam profil perpustakaan.</p></div>
-<div class="missionList">
-<div class="missionItem"><b>1. Mengembangkan koleksi yang beragam dan relevan</b><p>Memperluas dan memperkaya koleksi agar warga sekolah memiliki akses ke sumber pengetahuan yang mendukung pembelajaran dan penelitian.</p></div>
-<div class="missionItem"><b>2. Mendorong budaya literasi</b><p>Mengembangkan minat membaca dan keterampilan literasi melalui kegiatan yang merangsang pemikiran kritis, kreativitas, dan diskusi.</p></div>
-<div class="missionItem"><b>3. Memfasilitasi pembelajaran kolaboratif</b><p>Menciptakan lingkungan untuk kelompok studi, berbagi pengetahuan, dan proyek penelitian bagi komunitas sekolah.</p></div>
-<div class="missionItem"><b>4. Mengintegrasikan teknologi</b><p>Memanfaatkan teknologi untuk meningkatkan akses dan pemanfaatan perpustakaan, termasuk sistem manajemen online dan sumber daya digital.</p></div>
-<div class="missionItem"><b>5. Mengukir prestasi unggul</b><p>Mendukung pencapaian akademik dengan menyediakan sumber daya dan dukungan bagi peserta didik.</p></div>
-<div class="missionItem"><b>6. Menggalang dukungan komunitas</b><p>Memperluas dukungan dan partisipasi komunitas sekolah, orang tua, serta mitra eksternal.</p></div>
-</div>
-<div class="head" style="margin-top:35px"><small>FASILITAS</small><h2>Ruang dan fasilitas</h2><p>Fasilitas yang tercantum dalam profil perpustakaan.</p></div>
-<div class="services">
-<div class="service">❄️<b>Pendingin ruangan</b><p>AC dan kipas angin.</p></div>
-<div class="service">💻<b>Komputer</b><p>2 unit komputer untuk pengunjung, serta 1 unit komputer dan printer untuk petugas.</p></div>
-<div class="service">📽️<b>Perangkat presentasi</b><p>Tape recorder, LCD, dan projektor.</p></div>
-<div class="service">📖<b>Ruang baca</b><p>Meja panjang, kursi, meja study carrel, area belajar mandiri, dan lesehan.</p></div>
-<div class="service">📚<b>Rak koleksi</b><p>Rak koleksi buku dan rak referensi.</p></div>
-</div>
-</div></section>
-<section id="layanan" style="background:#f8f5fb"><div class="wrap">
-<div class="head"><small>LAYANAN &amp; INOVASI</small><h2>Layanan perpustakaan</h2><p>Layanan dan strategi inovasi yang tercantum dalam profil perpustakaan.</p></div>
-<div class="services">
-<div class="service">📚<b>Layanan perpustakaan</b><p>Layanan yang ramah, mudah, menarik, dan menyenangkan.</p></div>
-<div class="service">📖<b>Wajib baca</b><p>Program membaca di perpustakaan secara terjadwal.</p></div>
-<div class="service">🗣️<b>Bedah buku &amp; temu tokoh</b><p>Ruang diskusi dan pertemuan untuk memperkaya wawasan.</p></div>
-<div class="service">🎁<b>Wakaf buku</b><p>Mendorong warga sekolah menyumbangkan buku berkualitas.</p></div>
-<div class="service">🏅<b>Reward literasi</b><p>Sertifikat untuk pengunjung, peminjam, dan penyumbang buku teraktif.</p></div>
-<div class="service">✍️<b>Lomba literasi</b><p>Berbagai lomba untuk menumbuhkan minat dan kreativitas.</p></div>
-<div class="service">🖼️<b>Kumpulan karya</b><p>Wadah karya siswa dan guru.</p></div>
-<div class="service">🤝<b>Kerja sama</b><p>Kolaborasi dengan perpustakaan lain.</p></div>
-<div class="service">💻<b>Otomatisasi layanan</b><p>Pemanfaatan aplikasi teknologi dalam administrasi perpustakaan.</p></div>
-</div>
-<div class="head" style="margin-top:35px"><small>PROGRAM KERJA</small><h2>Pengembangan perpustakaan</h2></div>
-<div class="grid2">
-<div class="card"><h3>Program jangka pendek</h3><div class="programList">
-<div class="programItem">Pelayanan ramah, mudah, menarik, dan menyenangkan.</div>
-<div class="programItem">Menuntaskan administrasi perpustakaan melalui program PAS.</div>
-<div class="programItem">Melengkapi fasilitas sesuai kebutuhan.</div>
-<div class="programItem">Merawat dan memperbaiki bahan pustaka.</div>
-<div class="programItem">Menerbitkan administrasi seperti kartu buku, katalog, dan kartu anggota.</div>
-<div class="programItem">Penerbitan Surat Tanda Bebas Perpustakaan.</div>
-<div class="programItem">Meningkatkan budaya gemar membaca.</div>
-<div class="programItem">Mengikuti lomba perpustakaan dan menuju akreditasi.</div>
-</div></div>
-<div class="card"><h3>Program jangka panjang</h3><div class="programList">
-<div class="programItem">Mewujudkan ruang perpustakaan yang lebih luas dan nyaman.</div>
-<div class="programItem">Menambah kuantitas, kualitas, dan variasi koleksi.</div>
-<div class="programItem">Mengembangkan layanan otomasi berbasis IT.</div>
-<div class="programItem">Merealisasikan kegiatan wajib baca rutin.</div>
-<div class="programItem">Mendorong wakaf buku berkualitas.</div>
-<div class="programItem">Memanfaatkan sudut sekolah sebagai taman bacaan.</div>
-<div class="programItem">Mewujudkan perpustakaan mini di setiap kelas.</div>
-<div class="programItem">Mengadakan pameran buku dan seni setiap semester.</div>
-</div></div>
-</div>
-</div></section>
+<section id="profil"><div class="wrap"><div class="head"><small>TENTANG KAMI</small><h2>Lebih dekat dengan perpustakaan</h2><p>Informasi profil resmi dapat dilengkapi bersama pengelola perpustakaan.</p></div><div class="grid2"><div class="card"><h3>Profil singkat</h3><p>Graha Sastra Kertha Langhu merupakan ruang belajar yang menyediakan sumber informasi dan bahan bacaan untuk mendukung budaya literasi warga sekolah.</p></div><div class="card vision"><h3>Visi perpustakaan</h3><p>Menjadi pusat sumber belajar yang nyaman, informatif, dan mendorong tumbuhnya budaya literasi.</p><p style="margin-top:10px;font-size:10px">Visi di atas hanya contoh, bukan visi resmi.</p></div></div></div></section>
+<section id="layanan" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>FASILITAS</small><h2>Layanan perpustakaan</h2><p>Informasi layanan perpustakaan.</p></div><div class="services"><div class="service">📚<b>Baca di tempat</b><p>Ruang membaca dan belajar.</p></div><div class="service">🔎<b>Pencarian koleksi</b><p>Telusuri buku berdasarkan judul dan kategori.</p></div><div class="service">💡<b>Sumber informasi</b><p>Referensi untuk mendukung pembelajaran.</p></div><div class="service">✍️<b>Kegiatan literasi</b><p>Wadah berbagi karya dan minat baca.</p></div></div></div></section>
 <section class="catalog" id="katalog"><div class="wrap"><div class="head"><small>JELAJAHI KOLEKSI</small><h2>Katalog buku</h2><p>Telusuri koleksi perpustakaan melalui pencarian, kategori, dan halaman katalog.</p></div><div class="tools"><input id="q" placeholder="Cari judul, penulis, atau kode buku..."><select id="cat"><option value="">Semua kategori</option><option>Fiksi & Novel</option><option>Bahasa Asing</option><option>Pendidikan & Akademik</option><option>Keterampilan & Panduan Praktis</option><option>Pengembangan Diri & Psikologi</option><option>Komik & Manga</option></select></div><div id="catalogStatus" class="card" style="margin-bottom:14px">Menghubungkan katalog...</div><div class="books" id="books"></div><div id="pagination" style="display:flex;justify-content:center;align-items:center;gap:12px;margin-top:22px"></div></div></section>
 
-<section id="favorit" class="favSection"><div class="wrap"><div class="head"><small>KOLEKSI PILIHANMU</small><h2>Buku favorit</h2><p>Buku yang kamu simpan dari katalog akan muncul di sini pada perangkat ini.</p></div><div class="featureBooks" id="favoriteBooks"><div class="card">Memuat buku favorit...</div></div></div></section>
-<section id="populer" class="popularSection"><div class="wrap"><div class="head"><small>PILIHAN PEMBACA</small><h2>Buku populer</h2><p>Buku dengan ulasan dan rating terbanyak dari pembaca.</p></div><div class="featureBooks" id="popularBooks"><div class="card">Memuat buku populer...</div></div></div></section>
+<section class="digital-section" id="perpustakaan-digital"><div class="wrap">
+<div class="head"><small>KOLEKSI DIGITAL</small><h2>Perpustakaan Digital</h2><p>Baca koleksi e-book langsung melalui perangkatmu.</p></div>
+<div class="digital-tools"><input id="ebookSearch" type="search" placeholder="Cari judul e-book..."><select id="ebookCategory"><option value="">Semua kategori</option><option>Pendidikan &amp; Akademik</option><option>Bahasa</option><option>Komik</option></select></div>
+<div id="ebookStatus" class="digital-empty">Menghubungkan koleksi digital...</div><div class="ebook-grid" id="ebookGrid"></div>
+</div></section>
+<div class="reader-modal" id="ebookReader" aria-hidden="true"><div class="reader-top"><strong id="readerTitle">Membaca e-book</strong><button type="button" id="closeReader">Tutup ✕</button></div><iframe class="reader-frame" id="readerFrame" title="Pembaca e-book PDF"></iframe></div>
 <section id="kegiatan"><div class="wrap"><div class="head"><small>AKTIVITAS LITERASI</small><h2>Kegiatan perpustakaan</h2><p>Dokumentasi kegiatan literasi perpustakaan.</p></div><div class="activities">
 <div id="activityGallery" class="activities"><div class="activity"><img src="kegiatan-1.jpg" alt="Dokumentasi kegiatan"><div><b>Dokumentasi kegiatan</b><p>Galeri kegiatan perpustakaan.</p></div></div><div class="activity"><img src="kegiatan-2.jpg" alt="Dokumentasi kegiatan"><div><b>Galeri kegiatan</b><p>Galeri kegiatan perpustakaan.</p></div></div></div></div></div></section>
 <section id="karya" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>KREATIVITAS SISWA</small><h2>Karya pemustaka</h2><p>Ruang apresiasi karya dan kreativitas warga sekolah.</p></div><div id="worksGallery" class="activities"><div class="card">Karya pemustaka yang telah diterbitkan akan tampil di sini.</div></div></div></section>
-<section id="info" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>KUNJUNGI KAMI</small><h2>Informasi perpustakaan</h2><p>Informasi kunjungan perpustakaan.</p></div><div class="schedule"><div class="card"><h3>Jam operasional</h3><div class="row"><span>Senin–Sabtu</span><span>07.00–14.00</span></div><div class="row"><span>Minggu</span><span>Libur</span></div></div><div class="card"><h3>Kontak & lokasi</h3><div class="row"><span>Alamat</span><span>Desa Tusan, Banjarangkan</span></div><div class="row"><span>Gedung</span><span>Gedung barat</span></div><div class="row"><span>Kepala perpustakaan</span><span>Ida Ayu Dewi, S.Pd., M.Pd.</span></div></div></div></div>
-<div class="head" style="margin-top:30px"><small>PENGELOLA</small><h2>Struktur pengelola</h2><p>Nama dan jabatan berdasarkan dokumen profil perpustakaan.</p></div>
-<div class="orgGrid">
-<div class="orgItem"><b>Penanggung jawab</b><small>I Dewa Gede Anom, S.Pd.</small></div>
-<div class="orgItem"><b>Kepala perpustakaan</b><small>Ida Ayu Dewi, S.Pd., M.Pd.</small></div>
-<div class="orgItem"><b>Layanan pemustaka</b><small>Ni Ketut Satya Widiarni, S.E.</small></div>
-<div class="orgItem"><b>Layanan IT</b><small>I Wayan Bayu Permana, S.Pd.</small></div>
-<div class="orgItem"><b>Petugas</b><small>Kadek Ningsih, S.Pd.</small></div>
-<div class="orgItem"><b>Layanan teknis</b><small>Ni Wayan Saputriani</small></div>
-</div>
-</section>
+<section id="info" style="background:#f8f5fb"><div class="wrap"><div class="head"><small>KUNJUNGI KAMI</small><h2>Informasi perpustakaan</h2><p>Informasi kunjungan perpustakaan.</p></div><div class="schedule"><div class="card"><h3>Jam operasional</h3><div class="row"><span>Senin–Sabtu</span><span>07.00–14.00</span></div><div class="row"><span>Minggu</span><span>Libur</span></div></div><div class="card"><h3>Kontak & lokasi</h3><div class="row"><span>Lokasi</span><span>Banjarangkan, Bali</span></div><div class="row"><span>Email</span><span>email-contoh</span></div><div class="row"><span>Pengelola</span><span>Petugas perpustakaan</span></div></div></div></div></section>
 
 </main><footer><div class="wrap foot"><div><b>GRAHA SASTRA KERTHA LANGHU</b><p>Website informasi dan katalog Perpustakaan SMA Negeri 1 Banjarangkan.</p></div><div><b>Navigasi</b><p><a href="#profil">Profil</a><br><a href="#katalog">Katalog</a><br><a href="#kegiatan">Kegiatan</a></p></div><div><b>Informasi</b><p><a href="#info">Jam layanan</a><br><a href="#beranda">Kembali ke atas</a></p></div></div></footer>
-
-<div class="modal" id="bookModal" aria-hidden="true"><div class="modalBox" role="dialog" aria-modal="true" aria-labelledby="detailTitle"><button class="modalClose" id="closeBookModal" aria-label="Tutup">×</button><div id="bookDetail"></div></div></div>
 <div id="photoLightbox" aria-hidden="true"><button type="button" id="closePhoto" aria-label="Tutup">×</button><img id="lightboxImage" alt="Foto diperbesar"><div class="hint">Ketuk di luar foto atau tombol × untuk menutup</div></div>
 <script type="module">
 import * as Sentry from "https://cdn.jsdelivr.net/npm/@sentry/browser@8/+esm";
@@ -183,57 +89,17 @@ document.addEventListener('click',e=>{
 });
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLightbox();});
 
-let ratingSummary = {};
-let currentBooks = [];
-let allBooksCache = [];
-const FAVORITES_KEY = 'gskl_favorite_book_ids_v1';
-function getFavorites(){try{return JSON.parse(localStorage.getItem(FAVORITES_KEY)||'[]').map(String)}catch{return []}}
-function saveFavorites(ids){localStorage.setItem(FAVORITES_KEY,JSON.stringify(ids))}
-function stars(value){const n=Math.round(Number(value)||0);return '★'.repeat(n)+'☆'.repeat(5-n)}
-function bookCard(book, compact=false){
-  const id=String(book.id), summary=ratingSummary[id]||{count:0,avg:0};
-  const fav=getFavorites().includes(id);
-  return `<article class="book" data-book-open="${escapeHTML(id)}"><div class="cover">${escapeHTML(book.title)}</div><div class="bookInfo"><b>${escapeHTML(book.title)}</b><small>${escapeHTML(book.author||"Pengarang belum dicantumkan")}</small><span class="tag">${escapeHTML(book.category||"Belum dikategorikan")}</span>${book.book_code?`<small>Kode: ${escapeHTML(book.book_code)}</small>`:''}<div class="mutedSmall"><span class="stars">${summary.count?stars(summary.avg):'☆☆☆☆☆'}</span> ${summary.count?summary.avg.toFixed(1)+' · '+summary.count+' ulasan':'Belum ada ulasan'}</div><div class="bookActions"><button class="miniBtn primary" data-book-open="${escapeHTML(id)}">Detail</button><button class="miniBtn" data-favorite="${escapeHTML(id)}">${fav?'♥ Tersimpan':'♡ Favorit'}</button></div></div></article>`;
-}
 function renderBooks(rows) {
-  currentBooks = rows || [];
-  booksEl.innerHTML = rows.length ? rows.map(b=>bookCard(b)).join("") : '<div class="card">Belum ada buku yang cocok dengan pencarian ini.</div>';
-  renderFavoriteBooks();
-  renderPopularBooks();
-}
-function renderFavoriteBooks(){
-  const box=document.getElementById('favoriteBooks'); if(!box)return;
-  const ids=getFavorites();
-  const found=ids.map(id=>allBooksCache.find(b=>String(b.id)===id)||currentBooks.find(b=>String(b.id)===id)).filter(Boolean);
-  box.innerHTML=found.length?found.map(b=>bookCard(b,true)).join(''):'<div class="card">Belum ada buku favorit pada halaman katalog ini. Cari buku lalu tekan ♡ Favorit. Favorit tersimpan di perangkat ini.</div>';
-}
-function renderPopularBooks(){
-  const box=document.getElementById('popularBooks'); if(!box)return;
-  const ranked=[...(allBooksCache.length?allBooksCache:currentBooks)].sort((a,b)=>{const x=ratingSummary[String(a.id)]||{count:0,avg:0};const y=ratingSummary[String(b.id)]||{count:0,avg:0};return y.count-x.count||y.avg-x.avg;}).filter(b=>(ratingSummary[String(b.id)]||{}).count);
-  box.innerHTML=ranked.length?ranked.slice(0,5).map(b=>bookCard(b,true)).join(''):'<div class="card">Belum ada data ulasan untuk menentukan buku populer. Buku akan muncul setelah pembaca memberikan rating.</div>';
-}
-function openBook(id){
-  const b=allBooksCache.find(x=>String(x.id)===String(id))||currentBooks.find(x=>String(x.id)===String(id));
-  if(!b){return}
-  const summary=ratingSummary[String(b.id)]||{count:0,avg:0};
-  const fav=getFavorites().includes(String(b.id));
-  document.getElementById('bookDetail').innerHTML=`<span class="pill">DETAIL KOLEKSI</span><div class="detailCover">${escapeHTML(b.title)}</div><h2 id="detailTitle">${escapeHTML(b.title)}</h2><p><b>Pengarang:</b> ${escapeHTML(b.author||'Belum dicantumkan')}</p><p><b>Kategori:</b> ${escapeHTML(b.category||'Belum dikategorikan')}</p><p><b>Kode buku:</b> ${escapeHTML(b.book_code||'Belum tersedia')}</p><p><b>Rating:</b> <span class="stars">${summary.count?stars(summary.avg):'☆☆☆☆☆'}</span> ${summary.count?summary.avg.toFixed(1)+' dari 5 ('+summary.count+' ulasan)':'Belum ada ulasan'}</p><button class="btn" data-favorite="${escapeHTML(String(b.id))}">${fav?'♥ Hapus dari favorit':'♡ Simpan ke favorit'}</button><hr style="border:0;border-top:1px solid #eee;margin:20px 0"><h3>Beri ulasan buku</h3><form class="reviewForm" id="reviewForm"><label>Nama (opsional)</label><input id="reviewerName" maxlength="60" placeholder="Nama atau inisial"><label>Penilaian</label><select id="reviewRating" required><option value="5">5 - Sangat bagus</option><option value="4">4 - Bagus</option><option value="3">3 - Cukup</option><option value="2">2 - Kurang</option><option value="1">1 - Kurang sekali</option></select><label>Ulasan</label><textarea id="reviewText" maxlength="1000" required placeholder="Bagaimana pendapatmu tentang buku ini?"></textarea><button class="btn" type="submit">Kirim ulasan</button><p class="mutedSmall" id="reviewMessage">Ulasan akan ditampilkan setelah berhasil disimpan.</p></form><h3>Ulasan pembaca</h3><div id="bookReviewList" class="reviewList">Memuat ulasan...</div>`;
-  const modal=document.getElementById('bookModal');modal.classList.add('open');modal.setAttribute('aria-hidden','false');
-  loadBookReviews(b.id);
-  document.getElementById('reviewForm').onsubmit=async e=>{e.preventDefault();const message=document.getElementById('reviewMessage');const review=document.getElementById('reviewText').value.trim();if(!review){message.textContent='Ulasan tidak boleh kosong.';return}message.textContent='Mengirim ulasan...';const {error}=await supabase.from('book_reviews').insert({book_id:String(b.id),reviewer_name:document.getElementById('reviewerName').value.trim()||'Anonim',rating:Number(document.getElementById('reviewRating').value),review});if(error){console.error(error);message.textContent='Ulasan belum tersimpan. Pastikan skrip SQL fitur ulasan sudah dijalankan.';return}document.getElementById('reviewText').value='';message.textContent='Terima kasih! Ulasan berhasil dikirim.';await loadRatingSummary();await loadBookReviews(b.id);openBook(b.id);};
-}
-async function loadBookReviews(bookId){
-  const box=document.getElementById('bookReviewList');if(!box)return;
-  const {data,error}=await supabase.from('book_reviews').select('reviewer_name,rating,review,created_at').eq('book_id',String(bookId)).order('created_at',{ascending:false}).limit(30);
-  if(error){box.textContent='Ulasan belum tersedia. Pastikan tabel ulasan sudah dibuat.';return}
-  box.innerHTML=data.length?data.map(r=>`<div class="reviewItem"><b>${escapeHTML(r.reviewer_name||'Anonim')}</b> <span class="stars">${stars(r.rating)}</span><p style="margin:5px 0">${escapeHTML(r.review)}</p><small class="mutedSmall">${r.created_at?new Date(r.created_at).toLocaleDateString('id-ID'):''}</small></div>`).join(''):'<p class="mutedSmall">Belum ada ulasan. Jadilah pembaca pertama yang memberi ulasan.</p>';
-}
-async function loadRatingSummary(){
-  const {data,error}=await supabase.from('book_reviews').select('book_id,rating');
-  if(error){console.warn('Rating belum aktif:',error);ratingSummary={};return}
-  ratingSummary={};
-  (data||[]).forEach(r=>{const id=String(r.book_id);if(!ratingSummary[id])ratingSummary[id]={count:0,sum:0,avg:0};ratingSummary[id].count++;ratingSummary[id].sum+=Number(r.rating)||0;});
-  Object.values(ratingSummary).forEach(x=>x.avg=x.count?x.sum/x.count:0);
+  booksEl.innerHTML = rows.length ? rows.map(book => `
+    <article class="book">
+      <div class="cover">${escapeHTML(book.title)}</div>
+      <div class="bookInfo">
+        <b>${escapeHTML(book.title)}</b>
+        <small>${escapeHTML(book.author || "Pengarang belum dicantumkan")}</small>
+        <span class="tag">${escapeHTML(book.category || "Belum dikategorikan")}</span>
+        ${book.book_code ? `<small>Kode: ${escapeHTML(book.book_code)}</small>` : ""}
+      </div>
+    </article>`).join("") : '<div class="card">Belum ada buku yang cocok dengan pencarian ini.</div>';
 }
 function renderPagination() {
   if (!totalPages) { paginationEl.innerHTML = ""; return; }
@@ -254,7 +120,6 @@ async function loadBooks() {
   const from = currentPage * PAGE_SIZE;
   const {data,error,count} = await query.order("title",{ascending:true}).range(from,from+PAGE_SIZE-1);
   if (error) { status("Katalog belum dapat dimuat. Periksa koneksi dan pengaturan database."); booksEl.innerHTML=""; console.error(error); return; }
-  await loadRatingSummary();
   totalPages = Math.ceil((count || 0)/PAGE_SIZE);
   if (currentPage >= totalPages && totalPages > 0) { currentPage=totalPages-1; return loadBooks(); }
   totalEl.textContent = (count || 0).toLocaleString("id-ID");
@@ -262,18 +127,6 @@ async function loadBooks() {
   renderBooks(data); renderPagination();
 }
 
-async function loadAllBooksForFeatures(){
-  allBooksCache=[];let from=0,batch=1000;
-  while(true){
-    const {data,error}=await supabase.from('books').select('id,book_code,title,author,category').order('title',{ascending:true}).range(from,from+batch-1);
-    if(error){console.warn('Koleksi lengkap belum dimuat:',error);break}
-    allBooksCache.push(...(data||[]));
-    if(!data||data.length<batch)break;
-    from+=batch;
-    if(from>=20000)break;
-  }
-  renderFavoriteBooks();renderPopularBooks();
-}
 async function loadPublishedGallery(){
   const activityBox=document.getElementById('activityGallery');
   const worksBox=document.getElementById('worksGallery');
@@ -292,22 +145,10 @@ async function loadPublishedGallery(){
   } else console.warn('Galeri karya:',w.error);
 }
 
-
-document.addEventListener('click',e=>{
-  const fav=e.target.closest('[data-favorite]');
-  if(fav){e.preventDefault();const id=String(fav.dataset.favorite),ids=getFavorites();saveFavorites(ids.includes(id)?ids.filter(x=>x!==id):[...ids,id]);renderBooks(currentBooks);const modal=document.getElementById('bookModal');if(modal.classList.contains('open'))openBook(id);return;}
-  const open=e.target.closest('[data-book-open]');
-  if(open){e.preventDefault();openBook(open.dataset.bookOpen);return;}
-});
-function closeBookModal(){const m=document.getElementById('bookModal');m.classList.remove('open');m.setAttribute('aria-hidden','true');}
-document.getElementById('closeBookModal').onclick=closeBookModal;
-document.getElementById('bookModal').addEventListener('click',e=>{if(e.target.id==='bookModal')closeBookModal()});
-
 if (SUPABASE_URL.startsWith("https://") && SUPABASE_ANON_KEY.length > 20) {
   supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
   qEl.addEventListener("input", () => { clearTimeout(searchTimer); searchTimer=setTimeout(()=>{currentPage=0;loadBooks();},300); });
   catEl.addEventListener("change", () => { currentPage=0;loadBooks(); });
-  await loadAllBooksForFeatures();
   await loadBooks();
   await loadPublishedGallery();
 } else {
@@ -315,4 +156,24 @@ if (SUPABASE_URL.startsWith("https://") && SUPABASE_ANON_KEY.length > 20) {
   booksEl.innerHTML = '<div class="card">Database belum dihubungkan.</div>';
   totalEl.textContent = "—";
 }
+
+
+// Perpustakaan Digital: daftar e-book terbit dari Supabase Storage.
+const ebookGrid=document.getElementById('ebookGrid');
+const ebookStatus=document.getElementById('ebookStatus');
+const ebookSearch=document.getElementById('ebookSearch');
+const ebookCategory=document.getElementById('ebookCategory');
+const ebookReader=document.getElementById('ebookReader');
+const readerFrame=document.getElementById('readerFrame');
+const readerTitle=document.getElementById('readerTitle');
+let ebookRows=[];
+function openEbookReader(title,url){readerTitle.textContent=title;readerFrame.src=url+'#toolbar=1&navpanes=0';ebookReader.classList.add('open');ebookReader.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+function closeEbookReader(){ebookReader.classList.remove('open');ebookReader.setAttribute('aria-hidden','true');readerFrame.src='about:blank';document.body.style.overflow='';}
+document.getElementById('closeReader').addEventListener('click',closeEbookReader);
+ebookReader.addEventListener('click',e=>{if(e.target===ebookReader)closeEbookReader()});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeEbookReader()});
+function renderEbooks(){const term=ebookSearch.value.trim().toLowerCase(),cat=ebookCategory.value;const rows=ebookRows.filter(x=>(!cat||x.category===cat)&&(!term||x.title.toLowerCase().includes(term)||(x.author||'').toLowerCase().includes(term)));ebookGrid.innerHTML=rows.map(x=>{const pdf=supabase.storage.from('library-media').getPublicUrl(x.pdf_path).data.publicUrl;const cover=x.cover_path?supabase.storage.from('library-media').getPublicUrl(x.cover_path).data.publicUrl:'';return `<article class="ebook-card"><img class="ebook-cover" src="${escapeHTML(cover)}" alt="Sampul ${escapeHTML(x.title)}" loading="lazy"><div class="ebook-info"><h3>${escapeHTML(x.title)}</h3><div class="ebook-meta">${escapeHTML(x.author||'Penulis tidak dicantumkan')} · ${x.page_count?escapeHTML(x.page_count)+' halaman':'PDF'}</div><span class="ebook-category">${escapeHTML(x.category)}</span><div class="ebook-actions"><button type="button" data-read-ebook="${escapeHTML(x.id)}">Baca e-book</button><a href="${escapeHTML(pdf)}" target="_blank" rel="noopener">Buka PDF ↗</a></div></div></article>`}).join('');if(!rows.length)ebookGrid.innerHTML='<div class="digital-empty">Belum ada e-book yang cocok.</div>';ebookStatus.textContent=`Menampilkan ${rows.length} e-book`}
+if(supabase){const {data:ebooks,error:ebookError}=await supabase.from('library_ebooks').select('id,title,author,category,page_count,pdf_path,cover_path').eq('status','published').order('title');if(ebookError){ebookStatus.textContent='Koleksi digital belum tersedia. Petugas perlu menjalankan SQL dan menerbitkan e-book melalui halaman admin.';console.warn('E-book:',ebookError)}else{ebookRows=ebooks||[];renderEbooks()}}
+ebookSearch.addEventListener('input',renderEbooks);ebookCategory.addEventListener('change',renderEbooks);
+document.addEventListener('click',e=>{const b=e.target.closest('[data-read-ebook]');if(!b)return;const x=ebookRows.find(v=>v.id===b.dataset.readEbook);if(x){const url=supabase.storage.from('library-media').getPublicUrl(x.pdf_path).data.publicUrl;openEbookReader(x.title,url)}});
 </script></body></html>
